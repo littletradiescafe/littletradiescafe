@@ -1,0 +1,72 @@
+# Netlify Configuration for Little Tradies Cafe
+# Deploy static website with form handling and performance optimization
+
+[build]
+  publish = "."
+  command = "echo 'Static site ready'"
+
+# Redirect rules
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+
+# Form handling
+[[forms]]
+  name = "newsletter"
+
+[[forms]]
+  name = "nominate"
+
+[[forms]]
+  name = "booking"
+
+# Headers for performance and security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Security headers
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # Performance headers
+    Cache-Control = "public, max-age=3600"
+
+    # CSP policy
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' www.googletagmanager.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' www.google-analytics.com"
+
+# Cache static assets longer
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Compression
+[[plugins]]
+  package = "@netlify/plugin-minify-html"
+
+# Analytics
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"

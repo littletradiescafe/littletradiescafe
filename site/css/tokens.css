@@ -1,0 +1,251 @@
+/* ============================================================
+   Little Tradies Café — Design Tokens
+   Colors, type, spacing, radii, shadows, and motion tokens.
+   ============================================================ */
+
+/* --- Webfont loads --- */
+@font-face {
+  font-family: "Fredoka One";
+  src: url("../fonts/FredokaOne-Regular.woff2") format("woff2"),
+       url("../fonts/FredokaOne-Regular.woff")  format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lilita One";
+  src: url("../fonts/LilitaOne-Regular.woff2") format("woff2"),
+       url("../fonts/LilitaOne-Regular.woff")  format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeue-Regular.woff2") format("woff2"),
+       url("../fonts/BebasNeue-Regular.woff")  format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-600.woff2") format("woff2"),
+       url("../fonts/Nunito-600.woff")  format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-700.woff2") format("woff2"),
+       url("../fonts/Nunito-700.woff")  format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-800.woff2") format("woff2"),
+       url("../fonts/Nunito-800.woff")  format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Patrick+Hand&display=swap');
+
+:root {
+  /* =====================================================
+     COLORS — Brand
+     ===================================================== */
+
+  --color-teal:        #1F8A8A;
+  --color-yellow:      #F4C542;
+  --color-mustard:     #F4C542;
+  --color-orange:      #E67E22;
+  --color-navy:        #2F4E68;
+
+  --color-charcoal:    #3E4349;
+  --color-cream:       #F7F3EA;
+  --color-cream-soft:  #FBF8F1;
+  --color-bone:        #F7F3EA;
+  --color-white:       #FFFFFF;
+
+  --color-sage:        #7D8B6A;
+  --color-coral:       #E87A5B;
+  --color-warm-grey:   #7A7A73;
+  --color-brown:       #8B5E34;
+
+  /* Tints */
+  --tint-teal-12:      rgba(31,138,138,0.12);
+  --tint-yellow-30:    rgba(244,197,66,0.30);
+  --tint-mustard-30:   rgba(244,197,66,0.30);
+  --tint-orange-12:    rgba(230,126,34,0.12);
+  --tint-navy-10:      rgba(47,78,104,0.10);
+  --tint-navy-15:      rgba(47,78,104,0.15);
+  --tint-charcoal-65:  rgba(62,67,73,0.65);
+  --tint-charcoal-85:  rgba(62,67,73,0.85);
+
+  /* =====================================================
+     SEMANTIC TOKENS
+     ===================================================== */
+
+  --color-primary:     var(--color-teal);
+  --color-secondary:   var(--color-yellow);
+  --color-accent:      var(--color-orange);
+  --color-text-dark:   var(--color-charcoal);
+  --color-success:     var(--color-sage);
+  --color-info:        var(--color-navy);
+  --color-danger:      var(--color-coral);
+
+  --bg-app:            var(--color-cream);
+  --bg-surface:        var(--color-white);
+  --bg-surface-warm:   var(--color-cream-soft);
+  --bg-inverse:        var(--color-info);
+
+  --fg-default:        var(--color-text-dark);
+  --fg-strong:         var(--color-info);
+  --fg-muted:          var(--tint-charcoal-65);
+  --fg-soft:           var(--tint-charcoal-85);
+  --fg-on-dark:        var(--color-white);
+  --fg-on-cream:       var(--color-info);
+
+  --accent-primary:    var(--color-primary);
+  --accent-energy:     var(--color-accent);
+  --accent-highlight:  var(--color-secondary);
+  --accent-soft:       var(--color-sage);
+
+  /* =====================================================
+     TYPOGRAPHY — Font stacks
+     ===================================================== */
+
+  --font-display:      "Fredoka One", system-ui, sans-serif;
+  --font-heading:      "Lilita One", "Fredoka One", system-ui, sans-serif;
+  --font-body:         "Nunito", system-ui, -apple-system, sans-serif;
+  --font-label:        "Bebas Neue", "Nunito", Impact, sans-serif;
+  --font-script:       "Caveat", "Patrick Hand", "Comic Sans MS", cursive;
+  --font-hand:         "Patrick Hand", "Caveat", "Comic Sans MS", cursive;
+
+  /* =====================================================
+     TYPE SCALE
+     ===================================================== */
+  --text-xs:    12px;
+  --text-sm:    14px;
+  --text-base:  16px;
+  --text-lg:    20px;
+  --text-xl:    24px;
+  --text-2xl:   32px;
+  --text-3xl:   40px;
+  --text-4xl:   56px;
+  --text-5xl:   72px;
+
+  --lh-tight:  1.0;
+  --lh-snug:   1.1;
+  --lh-normal: 1.5;
+  --lh-loose:  1.7;
+
+  --ls-tight:  -0.02em;
+  --ls-normal: 0;
+  --ls-wide:   0.08em;
+  --ls-x-wide: 0.18em;
+
+  /* =====================================================
+     SPACING — 4px base
+     ===================================================== */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* =====================================================
+     RADII
+     ===================================================== */
+  --radius-xs:    6px;
+  --radius-sm:    12px;
+  --radius-md:    18px;
+  --radius-lg:    24px;
+  --radius-xl:    32px;
+  --radius-2xl:   40px;
+  --radius-pill:  9999px;
+
+  /* =====================================================
+     SHADOWS
+     ===================================================== */
+  --shadow-xs:   0 1px 2px rgba(47,78,104,0.06);
+  --shadow-sm:   0 2px 6px rgba(47,78,104,0.08);
+  --shadow-md:   0 6px 14px rgba(47,78,104,0.10), 0 2px 4px rgba(47,78,104,0.06);
+  --shadow-lg:   0 14px 30px rgba(47,78,104,0.14), 0 4px 8px rgba(47,78,104,0.06);
+  --shadow-xl:   0 24px 50px rgba(47,78,104,0.18), 0 6px 12px rgba(47,78,104,0.08);
+
+  --shadow-sticker: 4px 4px 0 var(--color-navy);
+  --shadow-sticker-lg: 6px 6px 0 var(--color-navy);
+
+  /* =====================================================
+     MOTION
+     ===================================================== */
+  --ease-bounce:  cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out:     cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:  cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast:     150ms;
+  --dur-normal:   250ms;
+  --dur-slow:     400ms;
+
+  /* =====================================================
+     PATTERNS
+     ===================================================== */
+  --hazard-stripe: repeating-linear-gradient(
+    135deg,
+    var(--color-mustard) 0 18px,
+    var(--color-navy) 18px 36px
+  );
+}
+
+html {
+  font-family: var(--font-body);
+  color: var(--fg-default);
+  background: var(--bg-app);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--text-4xl);
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  color: var(--color-info);
+  margin: 0;
+}
+
+h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  color: var(--color-info);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+h2 { font-size: var(--text-3xl); }
+h3 { font-size: var(--text-2xl); }
+h4 { font-size: var(--text-xl); }
+
+p {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--fg-soft);
+  margin: 0;
+}
+
+small, .text-small { font-size: var(--text-sm); }
