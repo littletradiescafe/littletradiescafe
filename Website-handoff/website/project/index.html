@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en">
+<head>
+<template id="__bundler_thumbnail" data-bg-color="#FBEFDD"><svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg"><rect width="1200" height="800" fill="#FBEFDD"/><circle cx="220" cy="620" r="140" fill="#F4C542"/><circle cx="1020" cy="180" r="120" fill="#1F8A8A"/><text x="600" y="420" font-family="sans-serif" font-weight="900" font-size="90" fill="#2E3A59" text-anchor="middle">Little Tradies</text></svg></template>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Little Tradies Cafe — Built for play. Brewed for parents.</title>
+<meta name="description" content="A construction-themed family cafe where little builders can dig, climb and imagine, while parents recharge with great coffee and feel-good food." />
+<link rel="stylesheet" href="colors_and_type.css" />
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" href="assets/illust-helmet.png" />
+</head>
+<body data-screen-label="01 Home">
+
+<!-- ============================ NAV ============================ -->
+<div class="container nav-wrap">
+  <nav class="nav">
+    <a class="nav-brand" href="index.html" aria-label="Little Tradies Cafe — home">
+      <img src="assets/logo-final.png" alt="Little Tradies Cafe" />
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="play.html">Play Zone</a>
+      <a href="toys.html">Toys</a>
+      <a href="community.html">Local Tradie</a>
+      <a href="visit.html">Visit Us</a>
+    </div>
+    <a class="btn primary nav-cta" href="#">Daily Deal <span class="star">★</span></a>
+    <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</div>
+
+<!-- ============================ HERO ============================ -->
+<section class="hero container">
+  <div class="blob" style="background:var(--color-yellow); top:-120px; right:-100px;"></div>
+  <div class="blob" style="background:var(--color-teal); bottom:-140px; left:-120px;"></div>
+
+  <div class="hero-grid">
+    <div class="hero-copy fade-up">
+      <span class="eyebrow">Family Cafe · Construction Play · Real Coffee</span>
+      <h1 class="hero-wordmark">
+        <span style="color:var(--color-teal);">Little</span>
+        <span style="color:var(--color-navy);">Tradies</span>
+        <span style="color:var(--color-orange);">Café</span>
+      </h1>
+      <p class="hero-tag">
+        Built for play. <span class="uline">Brewed for parents.</span>
+        <span class="star-doodle">★</span>
+      </p>
+      <p class="hero-sub">
+        A neighbourhood cafe and play centre celebrating Aussie tradies and
+        the hands-on world of construction. Less screen time. More build time.
+      </p>
+      <div class="hero-cta row">
+        <a class="btn primary lg" href="menu.html" id="heroCtaPrimary">View Adult Menu <span class="star">★</span></a>
+        <a class="btn outline lg" href="menu.html" id="heroCtaSecondary">View Kids Menu →</a>
+      </div>
+    </div>
+
+    <div class="hero-art fade-up d2">
+      <div class="hero-badge">
+        Family Cafe<br />Coffee<br />Play Zones<br />
+        <span style="opacity:.9">♡</span>
+      </div>
+      <div class="hero-cluster">
+        <img class="art-grader" src="assets/illust-grader.png" alt="Cartoon road grader" />
+        <img class="art-truck" src="assets/illust-truck.png" alt="Cartoon dump truck" />
+        <img class="art-excavator" src="assets/illust-excavator.png" alt="Cartoon excavator" />
+        <img class="art-cup"   src="assets/illust-coffee-cup.png" alt="Coffee cup" />
+        <img class="art-hat"   src="assets/illust-helmet.png" alt="Hard hat" />
+        <img class="art-loader" src="assets/illust-loader.png" alt="Cartoon loader" />
+        <img class="art-steamroller" src="assets/illust-steamroller.png" alt="Cartoon steamroller" />
+        <img class="art-box"   src="assets/illust-toolbox.png" alt="Toolbox" />
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .hero { padding: 32px 0 64px; position: relative; }
+    .hero-grid {
+      display: grid; gap: 40px;
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+    }
+    .hero-wordmark {
+      font-family: var(--font-display);
+      font-size: clamp(72px, 11vw, 168px);
+      line-height: 0.9;
+      letter-spacing: -0.02em;
+      margin: 18px 0 0;
+      display: flex; flex-direction: column;
+      font-weight: 400;
+    }
+    .hero-wordmark span { display: block; }
+    .hero-tag {
+      font-family: var(--font-script);
+      font-weight: 700;
+      font-size: clamp(28px, 3.4vw, 42px);
+      line-height: 1.2;
+      color: var(--color-navy);
+      margin: 22px 0 16px;
+      white-space: nowrap;
+    }
+    .hero-sub {
+      max-width: 460px; font-size: 17px; line-height: 1.6;
+      color: var(--fg-soft); margin: 0 0 28px;
+    }
+    .star-doodle { color: var(--color-yellow); margin-left: 14px; font-size: 28px; }
+
+    .hero-art { position: relative; min-height: 460px; }
+    .hero-badge {
+      position: absolute; top: -14px; right: -6px;
+      background: var(--color-teal); color: #fff;
+      padding: 18px 22px;
+      font-family: var(--font-script);
+      font-weight: 700; font-size: 20px;
+      line-height: 1.15; border-radius: 50% / 60%;
+      transform: rotate(-4deg);
+      box-shadow: var(--shadow-md);
+      text-align: center; z-index: 10;
+    }
+    .hero-cluster { position: relative; height: 700px; }
+    .hero-cluster img {
+      position: absolute;
+      filter:
+        drop-shadow(0 10px 10px rgba(47,78,104,0.18))
+        drop-shadow(0 3px 4px rgba(47,78,104,0.12));
+      transform-origin: center;
+      pointer-events: none;
+    }
+    .art-truck       { width: calc(var(--truck-w, 40)       * 1%); left: calc(var(--truck-x, 44)       * 1%); top: calc(var(--truck-y, 22)       * 1%); transform: translate(-50%,-50%) rotate(calc(var(--truck-rot, 4)         * 1deg)); z-index: var(--truck-z, 3); }
+    .art-grader      { width: calc(var(--grader-w, 38)      * 1%); left: calc(var(--grader-x, 18)      * 1%); top: calc(var(--grader-y, 28)      * 1%); transform: translate(-50%,-50%) rotate(calc(var(--grader-rot, -6)       * 1deg)); z-index: var(--grader-z, 2); }
+    .art-excavator   { width: calc(var(--excavator-w, 40)   * 1%); left: calc(var(--excavator-x, 78)   * 1%); top: calc(var(--excavator-y, 44)   * 1%); transform: translate(-50%,-50%) rotate(calc(var(--excavator-rot, 5)     * 1deg)); z-index: var(--excavator-z, 2); }
+    .art-loader      { width: calc(var(--loader-w, 42)      * 1%); left: calc(var(--loader-x, 26)      * 1%); top: calc(var(--loader-y, 60)      * 1%); transform: translate(-50%,-50%) rotate(calc(var(--loader-rot, -4)       * 1deg)); z-index: var(--loader-z, 4); }
+    .art-steamroller { width: calc(var(--steamroller-w, 38) * 1%); left: calc(var(--steamroller-x, 52) * 1%); top: calc(var(--steamroller-y, 52) * 1%); transform: translate(-50%,-50%) rotate(calc(var(--steamroller-rot, 4)  * 1deg)); z-index: var(--steamroller-z, 3); }
+    .art-cup         { width: calc(var(--cup-w, 22)         * 1%); left: calc(var(--cup-x, 16)         * 1%); top: calc(var(--cup-y, 84)         * 1%); transform: translate(-50%,-50%) rotate(calc(var(--cup-rot, -8)          * 1deg)); z-index: var(--cup-z, 6); }
+    .art-hat         { width: calc(var(--hat-w, 26)         * 1%); left: calc(var(--hat-x, 48)         * 1%); top: calc(var(--hat-y, 82)         * 1%); transform: translate(-50%,-50%) rotate(calc(var(--hat-rot, 7)           * 1deg)); z-index: var(--hat-z, 6); }
+    .art-box         { width: calc(var(--box-w, 26)         * 1%); left: calc(var(--box-x, 80)         * 1%); top: calc(var(--box-y, 74)         * 1%); transform: translate(-50%,-50%) rotate(calc(var(--box-rot, -5)          * 1deg)); z-index: var(--box-z, 5); }
+
+    @media (max-width: 860px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-cluster { height: 500px; }
+      .hero-badge { font-size: 18px; padding: 16px 20px; }
+      .hero-tag { white-space: normal; }
+    }
+  </style>
+</section>
+
+<!-- ============================ HAZARD ============================ -->
+<div class="hazard"></div>
+
+<!-- ============================ WELCOME ============================ -->
+<section id="welcome" class="section container">
+  <div class="welcome-grid">
+    <div class="welcome-photo fade-up">
+      <div class="photo-frame">
+        <div class="photo-inner">
+          <div class="photo-overlay" data-comment-anchor="43706721af-div"></div>
+          <div class="photo-tag">Good Coffee.<br/>Great Play.<br/>Happy Families.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="welcome-copy">
+      <p class="hello">Welcome to</p>
+      <h2 class="title">
+        <span style="color:var(--color-teal)">Little</span>
+        <span style="color:var(--color-navy)">Tradies</span>
+        <span style="color:var(--color-orange)">Cafe</span>
+      </h2>
+      <p class="lead">
+        We're a construction-themed family cafe where little builders can dig,
+        climb and imagine, while parents relax with great coffee and feel-good
+        food. Every visit is designed for smiles, sticky fingers and strong coffee.
+      </p>
+
+      <div class="values">
+        <div class="value">
+          <div class="value-icon" style="background: rgba(31,138,138,.15)">
+            <img src="assets/illust-coffee-cup.png" alt="" />
+          </div>
+          <div class="value-label" style="color:var(--color-teal)">Parent
+Friendly</div>
+        </div>
+        <div class="value">
+          <div class="value-icon" style="background: rgba(244,197,66,.25)">
+            <img src="assets/illust-helmet.png" alt="" />
+          </div>
+          <div class="value-label" style="color:#B68F1B">Imaginative
+Play</div>
+        </div>
+        <div class="value">
+          <div class="value-icon" style="background: rgba(230,126,34,.15)">
+            <img src="assets/illust-loader.png" alt="" />
+          </div>
+          <div class="value-label" style="color:var(--color-orange)">Great Coffee
+&amp; Food</div>
+        </div>
+        <div class="value">
+          <div class="value-icon" style="background: rgba(125,139,106,.18)">
+            <img src="assets/illust-truck.png" alt="" />
+          </div>
+          <div class="value-label" style="color:var(--color-sage)">Local &amp;
+Welcoming</div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:28px">
+        <a class="btn teal" href="about.html">Our Story →</a>
+        <a class="btn outline" href="play.html">Play Zone Info</a>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .welcome-grid { display: grid; gap: 40px; grid-template-columns: 1fr 1.05fr; align-items: center; }
+    .photo-frame {
+      border-radius: 32px; overflow: hidden;
+      background: #6E5238; border: 3px solid var(--color-navy);
+      box-shadow: var(--shadow-lg); aspect-ratio: 4 / 3.2; position: relative;
+    }
+    .photo-inner {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 30% 35%, rgba(242,179,44,0.25), transparent 55%),
+        radial-gradient(circle at 70% 70%, rgba(31,141,138,0.22), transparent 55%),
+        linear-gradient(160deg, #b08454 0%, #6E5238 60%, #3E2E1F 100%);
+    }
+    .photo-overlay {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(transparent 60%, rgba(0,0,0,0.25)),
+        repeating-linear-gradient(2deg, rgba(255,255,255,0.04) 0 2px, transparent 2px 6px);
+    }
+    .photo-tag {
+      position: absolute; right: 12%; top: 12%;
+      background: rgba(0,0,0,0.6); color: #F7F3EA;
+      padding: 18px 20px; border-radius: 18px;
+      font-family: var(--font-script); font-weight: 700;
+      font-size: 22px; line-height: 1.15;
+      transform: rotate(-3deg); z-index: 2;
+    }
+    .scene-truck  { position: absolute; left: 6%;  bottom: 6%;  width: 40%; transform: rotate(-3deg); filter: drop-shadow(0 6px 14px rgba(0,0,0,0.4)); }
+    .scene-loader { position: absolute; right: 4%; bottom: 22%; width: 32%; transform: rotate(3deg); filter: drop-shadow(0 6px 14px rgba(0,0,0,0.4)); }
+    .scene-hat    { position: absolute; left: 44%; bottom: 8%;  width: 22%; transform: rotate(-6deg); filter: drop-shadow(0 6px 14px rgba(0,0,0,0.4)); }
+    .hello { font-family: var(--font-body); font-weight: 800; font-size: 22px; color: var(--color-navy); margin: 0 0 6px; }
+    .title { font-family: var(--font-display); font-size: clamp(44px, 5.5vw, 76px); line-height: 1.0; letter-spacing: -0.02em; margin: 0 0 22px; }
+    .lead { color: var(--fg-soft); margin: 0 0 28px; font-size: 17px; line-height: 1.65; }
+    @media (max-width: 860px) { .welcome-grid { grid-template-columns: 1fr; } }
+  </style>
+</section>
+
+<!-- ============================ WHAT YOU'LL FIND ============================ -->
+<section class="section section-cream-soft" id="features">
+  <div class="container">
+    <div style="text-align:center; max-width:720px; margin:0 auto 48px;">
+      <span class="eyebrow">What you'll find inside</span>
+      <h2 class="h-section" style="margin:14px 0 12px;">A whole worksite for little hands.</h2>
+      <p class="script">Coffee for the grown-ups. Confidence for the kids.</p>
+    </div>
+
+    <div class="feature-grid">
+      <article class="feature-card sticker">
+        <div class="feature-icon" style="background: var(--color-yellow)">
+          <img src="assets/illust-helmet.png" alt="" />
+        </div>
+        <h3 class="h-card">Dress-Up &amp; Dig</h3>
+        <p>Hi-vis vests, hard hats and a sandpit dig site. Pretend-play stations let kids haul, dump and build.</p>
+      </article>
+      <article class="feature-card sticker">
+        <div class="feature-icon" style="background: var(--color-teal); color:#fff">
+          <img src="assets/illust-coffee-cup.png" alt="" />
+        </div>
+        <h3 class="h-card">Proper Coffee</h3>
+        <p>Local roast, milk on tap, and a bench wide enough for the pram. Babycinos always come with a marshmallow.</p>
+      </article>
+      <article class="feature-card sticker">
+        <div class="feature-icon" style="background: var(--color-orange); color:#fff">
+          <img src="assets/illust-loader.png" alt="" />
+        </div>
+        <h3 class="h-card">Hearty Food</h3>
+        <p>Brekkie rolls, builder-sized lunches, and a kids menu of nuggets, mini pizzas and snack boxes.</p>
+      </article>
+      <article class="feature-card sticker">
+        <div class="feature-icon" style="background: var(--color-sage); color:#fff">
+          <img src="assets/illust-toolbox.png" alt="" />
+        </div>
+        <h3 class="h-card">Mini Workshops</h3>
+        <p>Weekend make-and-take sessions hosted by real tradies — hammering, sawing (foam), painting and more.</p>
+      </article>
+      <article class="feature-card sticker">
+        <div class="feature-icon" style="background: var(--color-navy); color:#fff">
+          <img src="assets/illust-grader.png" alt="" />
+        </div>
+        <h3 class="h-card">Birthday Builds</h3>
+        <p>Theme parties with hard-hat décor, mini cement-mixer cakes and a private play hour for your crew.</p>
+      </article>
+      <article class="feature-card sticker">
+        <div class="feature-icon" style="background: var(--color-coral); color:#fff">
+          <img src="assets/illust-excavator.png" alt="" />
+        </div>
+        <h3 class="h-card">Tradie of the Month</h3>
+        <p>We celebrate a local builder, sparkie or chippie every month — on the wall, on the house, on the socials.</p>
+      </article>
+    </div>
+  </div>
+
+  <style>
+    .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .feature-card { display: flex; flex-direction: column; gap: 12px; padding: 24px 22px 26px; }
+    .feature-card .h-card { font-size: 22px; }
+    .feature-card p { font-size: 15px; line-height: 1.55; }
+    .feature-icon { width: 76px; height: 76px; border-radius: 22px; display: flex; align-items: center; justify-content: center; margin-bottom: 4px; }
+    .feature-icon img { width: 58px; height: 58px; object-fit: contain; }
+    @media (max-width: 880px) { .feature-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .feature-grid { grid-template-columns: 1fr; } }
+  </style>
+</section>
+
+<!-- ============================ MENU PEEK ============================ -->
+<section class="section container">
+  <div class="menupeek-grid">
+    <div>
+      <span class="eyebrow">Today on the worksite menu</span>
+      <h2 class="h-section" style="margin:14px 0 18px">
+        Built big.<br />
+        <span style="color:var(--color-orange)">Made fresh.</span>
+      </h2>
+      <p style="font-size:17px; max-width:520px; line-height:1.6">
+        A short, honest menu that swings from <em>babycino &amp; banana bread</em> to
+        <em>builder's brekkie roll</em>. Order at the bench. Sticky fingers welcome.
+      </p>
+      <div class="menupeek-list">
+        <div class="menupeek-row">
+          <span class="pill teal">Brekkie</span>
+          <strong>Builder's Brekkie Roll</strong>
+          <span class="dots"></span>
+          <span class="price">$12.50</span>
+        </div>
+        <div class="menupeek-row">
+          <span class="pill orange">Mains</span>
+          <strong>Crinkle Cut Chips &amp; Aioli</strong>
+          <span class="dots"></span>
+          <span class="price">$9.00</span>
+        </div>
+        <div class="menupeek-row">
+          <span class="pill yellow">Kids</span>
+          <strong>Mini Pizza — Margherita</strong>
+          <span class="dots"></span>
+          <span class="price">$10.00</span>
+        </div>
+        <div class="menupeek-row">
+          <span class="pill sage">Sweet</span>
+          <strong>Cement-Mixer Choc Brownie</strong>
+          <span class="dots"></span>
+          <span class="price">$6.50</span>
+        </div>
+      </div>
+      <div class="row" style="margin-top:28px">
+        <a class="btn primary" href="menu.html">See the full menu →</a>
+      </div>
+    </div>
+
+    <aside class="kids-menu sticker flat">
+      <div class="board">
+        <div class="board-header">
+          <span class="spark left">✦</span>
+          <span class="title">Kids Menu</span>
+          <span class="spark right">✦</span>
+        </div>
+        <div class="rows">
+          <div class="row-item">
+            <div class="row-ico"><img src="assets/illust-loader.png" alt="" /></div>
+            <div class="row-name">Nuggets</div>
+            <div class="row-line"></div>
+            <div class="row-star" style="color:var(--color-yellow)">★</div>
+          </div>
+          <div class="row-item">
+            <div class="row-ico"><img src="assets/illust-helmet.png" alt="" /></div>
+            <div class="row-name">Brekkie Roll</div>
+            <div class="row-line"></div>
+            <div class="row-star" style="color:var(--color-teal)">★</div>
+          </div>
+          <div class="row-item">
+            <div class="row-ico"><img src="assets/illust-toolbox.png" alt="" /></div>
+            <div class="row-name">Snack Box</div>
+            <div class="row-line"></div>
+            <div class="row-star" style="color:var(--color-orange)">★</div>
+          </div>
+          <div class="row-item">
+            <div class="row-ico"><img src="assets/illust-coffee-cup.png" alt="" /></div>
+            <div class="row-name">Babycino</div>
+            <div class="row-line"></div>
+            <div class="row-star" style="color:transparent">★</div>
+          </div>
+        </div>
+        <div class="board-foot">
+          <div class="heart">♡</div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <style>
+    .menupeek-grid { display: grid; grid-template-columns: 1.2fr 360px; gap: 40px; align-items: center; }
+    .menupeek-list { margin-top: 32px; display: flex; flex-direction: column; gap: 10px; }
+    .menupeek-row {
+      display: flex; align-items: center; gap: 14px;
+      padding: 14px 16px; background: #fff;
+      border: 2px solid var(--tint-navy-15); border-radius: 18px;
+      transition: transform 200ms var(--ease-bounce), border-color 200ms;
+    }
+    .menupeek-row:hover { transform: translateX(4px); border-color: var(--color-navy); }
+    .menupeek-row strong { font-size: 16px; color: var(--color-navy); }
+    .menupeek-row .dots { flex: 1; border-bottom: 2px dotted var(--tint-navy-15); height: 6px; }
+    .menupeek-row .price { font-family: var(--font-hand); color: var(--color-orange); font-size: 22px; font-weight: 700; }
+    .kids-menu { border: 3px solid var(--color-teal); border-radius: 28px; padding: 18px; max-width: 360px; margin: 0 auto; }
+    .kids-menu .board { background: #fff; border-radius: 18px; padding: 14px 16px 6px; }
+    .board-header {
+      display: flex; align-items: center; justify-content: center; gap: 12px;
+      background: var(--color-teal); color: #fff;
+      padding: 10px 22px; border-radius: 14px;
+      margin: -32px auto 18px; width: fit-content;
+      box-shadow: var(--shadow-sm);
+    }
+    .board-header .title { font-family: var(--font-display); font-size: 28px; }
+    .board-header .spark { color: var(--color-yellow); font-size: 14px; }
+    .rows { display: flex; flex-direction: column; gap: 14px; }
+    .row-item { display: grid; grid-template-columns: 48px 1fr auto auto; align-items: center; gap: 12px; }
+    .row-ico { width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; }
+    .row-ico img { width: 44px; height: 44px; object-fit: contain; }
+    .row-name { font-family: var(--font-display); font-size: 22px; color: var(--color-navy); }
+    .row-line { height: 2px; background-image: linear-gradient(to right, var(--tint-navy-15) 50%, transparent 50%); background-size: 6px 2px; width: 30px; }
+    .row-star { font-size: 20px; }
+    .board-foot {
+      margin-top: 16px;
+      background: repeating-linear-gradient(135deg, #1F8A8A 0 14px, #fff 14px 28px);
+      height: 14px; border-radius: 10px; position: relative;
+    }
+    .heart {
+      position: absolute; left: 50%; transform: translateX(-50%);
+      bottom: -10px; background: #fff; color: var(--color-teal);
+      width: 22px; height: 22px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 99px; font-size: 14px;
+    }
+    @media (max-width: 920px) {
+      .menupeek-grid { grid-template-columns: 1fr; }
+      .kids-menu { max-width: 360px; margin: 0 auto; }
+    }
+  </style>
+</section>
+
+<!-- ============================ CHALK BAND ============================ -->
+<section class="chalk-band">
+  <img class="left-img"  src="assets/illust-truck.png" alt="" />
+  <img class="right-img" src="assets/illust-toolbox.png" alt="" />
+  <div class="stars">
+    <span style="top:18%; left:12%; color:#F4C542">★</span>
+    <span style="top:70%; left:28%; color:#1F8A8A">•</span>
+    <span style="top:30%; right:20%; color:#E67E22">•</span>
+    <span style="bottom:16%; right:8%; color:#F4C542">★</span>
+  </div>
+  <div class="slogan">
+    <span style="color:#1F8A8A">BUILD.</span>
+    <span style="color:#F4C542">PLAY.</span>
+    <span style="color:#E67E22">EAT.</span>
+    <span style="color:#FFFFFF">REPEAT!</span>
+  </div>
+</section>
+
+<!-- ============================ CHIPS ============================ -->
+<section class="section container">
+  <div class="chips">
+    <div class="chip coffee"><span class="chip-ico"><img src="assets/illust-coffee-cup.png" alt="" /></span><span>Coffee</span></div>
+    <div class="chip play"><span class="chip-ico"><img src="assets/illust-helmet.png" alt="" /></span><span>Play</span></div>
+    <div class="chip food"><span class="chip-ico"><img src="assets/illust-loader.png" alt="" /></span><span>Food</span></div>
+    <div class="chip family"><span class="chip-ico"><img src="assets/illust-truck.png" alt="" /></span><span>Family</span></div>
+  </div>
+</section>
+
+<!-- ============================ MOVEMENT ============================ -->
+<section class="section">
+  <div class="container">
+    <div class="movement sticker" style="background:var(--color-navy); color:#fff; border-color:var(--color-yellow); border-width:4px;">
+      <div class="movement-grid">
+        <div>
+          <span class="eyebrow" style="color:var(--color-yellow)">Our Movement</span>
+          <h2 class="h-section" style="color:#fff; margin: 12px 0 14px; font-size: clamp(40px,5vw,64px);">
+            Less screen time.<br />
+            <span style="color:var(--color-yellow)">More build time.</span>
+          </h2>
+          <p style="font-size:18px; color:rgba(255,255,255,0.85); max-width:560px; line-height:1.55;">
+            We celebrate real-world heroes — local tradies, builders, sparkies, chippies —
+            as role models in a screen-saturated world. Come raise makers, not watchers.
+          </p>
+          <div class="row" style="margin-top:24px">
+            <a class="btn primary lg" href="about.html">Read our story →</a>
+            <a class="btn outline lg" style="background:transparent; color:#fff; border-color:#fff;" href="community.html">Meet the community</a>
+          </div>
+        </div>
+        <div class="movement-art"><img src="assets/illust-excavator.png" alt="" /></div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .movement { padding: 44px 48px; box-shadow: 6px 6px 0 var(--color-yellow); }
+    .movement:hover { box-shadow: 6px 6px 0 var(--color-yellow); transform: none; }
+    .movement-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: center; }
+    .movement-art img { width: 100%; max-width: 340px; margin-left: auto; filter: drop-shadow(0 12px 20px rgba(0,0,0,0.35)); transform: rotate(-3deg); }
+    @media (max-width: 800px) {
+      .movement { padding: 32px 24px; }
+      .movement-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</section>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="lt-footer">
+  <div class="scallop" aria-hidden="true"></div>
+  <div class="container footer-grid">
+    <div class="brand-col">
+      <img src="assets/logo-final.png" alt="Little Tradies Cafe" />
+      <p class="ftag">Built for play. Brewed for parents. <span class="heart">♡</span></p>
+    </div>
+    <div>
+      <h4>Visit Us</h4>
+      <p><span class="ico">▣</span> 123 Little Builders Lane<br />&nbsp;&nbsp;&nbsp;&nbsp;Playtown VIC 3000</p>
+      <p><span class="ico">◷</span> Open 7 Days<br />&nbsp;&nbsp;&nbsp;&nbsp;7:00am – 5:00pm</p>
+    </div>
+    <div>
+      <h4>Get in Touch</h4>
+      <p><span class="ico">☎</span> (03) 1234 5678</p>
+      <p><span class="ico">✉</span> hello@littletradiescafe.com.au</p>
+      <p><span class="ico">⌖</span> littletradiescafe.com.au</p>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <div class="socials">
+        <a href="#" class="soc f" aria-label="Facebook">f</a>
+        <a href="#" class="soc i" aria-label="Instagram">◉</a>
+        <a href="#" class="soc t" aria-label="TikTok">♪</a>
+      </div>
+      <p class="thanks">Thanks for supporting<br />local &amp; family! <span class="heart">♡</span></p>
+    </div>
+  </div>
+  <div class="copybar">
+    <div class="container copybar-row">
+      <span>© 2026 Little Tradies Cafe · Built for play. Brewed for parents.</span>
+      <span><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms &amp; Conditions</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================ TWEAKS PANEL ============================ -->
+<div id="tweaks-root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+
+<script type="text/babel" data-presets="react">
+const HERO_TWEAKS = /*EDITMODE-BEGIN*/{
+  "truck_x":       44, "truck_y":       22, "truck_rot":        4, "truck_w":       40, "truck_z":       3,
+  "grader_x":      18, "grader_y":      28, "grader_rot":      -6, "grader_w":      38, "grader_z":      2,
+  "excavator_x":   78, "excavator_y":   44, "excavator_rot":    5, "excavator_w":   40, "excavator_z":   2,
+  "loader_x":      26, "loader_y":      60, "loader_rot":      -4, "loader_w":      42, "loader_z":      4,
+  "steamroller_x": 52, "steamroller_y": 52, "steamroller_rot":  4, "steamroller_w": 38, "steamroller_z": 3,
+  "cup_x":         16, "cup_y":         84, "cup_rot":         -8, "cup_w":         22, "cup_z":         6,
+  "hat_x":         48, "hat_y":         82, "hat_rot":          7, "hat_w":         26, "hat_z":         6,
+  "box_x":         80, "box_y":         74, "box_rot":         -5, "box_w":         26, "box_z":         5,
+  "ctaPrimary":   "View Adult Menu",
+  "ctaSecondary": "View Kids Menu →"
+}/*EDITMODE-END*/;
+
+const ITEMS = [
+  ['truck', 'Dump Truck'],
+  ['grader', 'Road Grader'],
+  ['excavator', 'Excavator'],
+  ['loader', 'Loader'],
+  ['steamroller', 'Steamroller'],
+  ['hat',   'Hard Hat'],
+  ['cup',   'Coffee Cup'],
+  ['box',   'Toolbox'],
+];
+
+function applyTweaks(t) {
+  const el = document.querySelector('.hero-cluster');
+  if (el) {
+    for (const [item] of ITEMS) {
+      for (const p of ['x','y','rot','w','z']) {
+        const k = item + '_' + p;
+        if (t[k] != null) el.style.setProperty('--' + item + '-' + p, t[k]);
+      }
+    }
+  }
+  const p = document.getElementById('heroCtaPrimary');
+  if (p) p.innerHTML = (t.ctaPrimary || '') + ' <span class="star">★</span>';
+  const s = document.getElementById('heroCtaSecondary');
+  if (s) s.textContent = t.ctaSecondary || '';
+}
+
+function ArtTweaks() {
+  const [t, setTweak] = useTweaks(HERO_TWEAKS);
+  React.useEffect(() => { applyTweaks(t); }, [t]);
+
+  const layer = (key, label) => (
+    <React.Fragment key={key}>
+      <TweakSection label={label} />
+      <TweakSlider label="X" value={t[key+'_x']} min={0} max={100} step={1} unit="%"
+                   onChange={(v)=>setTweak(key+'_x', v)} />
+      <TweakSlider label="Y" value={t[key+'_y']} min={0} max={100} step={1} unit="%"
+                   onChange={(v)=>setTweak(key+'_y', v)} />
+      <TweakSlider label="Size" value={t[key+'_w']} min={10} max={120} step={1} unit="%"
+                   onChange={(v)=>setTweak(key+'_w', v)} />
+      <TweakSlider label="Rotation" value={t[key+'_rot']} min={-30} max={30} step={1} unit="°"
+                   onChange={(v)=>setTweak(key+'_rot', v)} />
+      <TweakSlider label="Layer (z)" value={t[key+'_z']} min={1} max={6} step={1}
+                   onChange={(v)=>setTweak(key+'_z', v)} />
+    </React.Fragment>
+  );
+
+  return (
+    <TweaksPanel title="Hero Composition">
+      <TweakSection label="Hero Buttons" />
+      <TweakText label="Primary CTA"   value={t.ctaPrimary}
+                 onChange={(v)=>setTweak('ctaPrimary', v)} />
+      <TweakText label="Secondary CTA" value={t.ctaSecondary}
+                 onChange={(v)=>setTweak('ctaSecondary', v)} />
+      {ITEMS.map(([k, lbl]) => layer(k, lbl))}
+      <TweakButton label="Reset to defaults"
+                   onClick={() => {
+                     for (const k of Object.keys(HERO_TWEAKS)) setTweak(k, HERO_TWEAKS[k]);
+                   }} />
+    </TweaksPanel>
+  );
+}
+
+applyTweaks(HERO_TWEAKS);
+ReactDOM.createRoot(document.getElementById('tweaks-root')).render(<ArtTweaks />);
+</script>
+
+</body>
+</html>

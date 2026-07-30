@@ -1,0 +1,8 @@
+/* ============================================================
+   Little Tradies Café — Design System entry point
+   Link this single file to pull in all foundational tokens
+   (colors, type, spacing, radii, shadows, motion) and the
+   element defaults that map semantic HTML to the brand system.
+   ============================================================ */
+
+@import url("colors_and_type.css");

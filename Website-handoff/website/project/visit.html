@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Visit — Little Tradies Cafe</title>
+<meta name="description" content="Find us, book a table or birthday build, and get in touch." />
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" href="assets/illust-helmet.png" />
+</head>
+<body data-screen-label="06 Visit">
+
+<!-- NAV -->
+<div class="container nav-wrap">
+  <nav class="nav">
+    <a class="nav-brand" href="index.html" aria-label="Little Tradies Cafe — home">
+      <img src="assets/logo-final.png" alt="Little Tradies Cafe" />
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="play.html">Play Zone</a>
+      <a href="toys.html">Toys</a>
+      <a href="community.html">Local Tradie</a>
+      <a href="visit.html" class="active">Visit Us</a>
+    </div>
+    <a class="btn primary nav-cta" href="#">Daily Deal <span class="star">★</span></a>
+    <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section class="page-hero container">
+  <div class="blob" style="background:#1F8A8A; top:-100px; right:-80px;"></div>
+  <div class="blob" style="background:#E67E22; bottom:-100px; left:-80px;"></div>
+  <div class="page-hero-grid">
+    <div class="fade-up">
+      <span class="eyebrow">Come Visit</span>
+      <h1 class="h-display" style="margin-top:14px">
+        We're open<br />
+        <span style="color:var(--color-teal)">every day.</span>
+      </h1>
+      <p class="lead">
+        Walk in, grab the bench, drop the kids in the dig pit.
+        Booking is only needed for groups of 6+ or birthday builds.
+      </p>
+      <div class="row" style="margin-top:24px">
+        <a class="btn primary lg" href="#book">Book a Table →</a>
+        <a class="btn outline lg" href="#directions">Get directions</a>
+      </div>
+    </div>
+    <div class="page-hero-art fade-up d2">
+      <img src="assets/illust-toolbox.png" alt="Toolbox" />
+    </div>
+  </div>
+</section>
+
+<div class="hazard"></div>
+
+<!-- HOURS + ADDRESS + MAP -->
+<section class="section container" id="directions">
+  <div class="visit-grid">
+
+    <!-- Hours card -->
+    <div class="sticker hours-card">
+      <span class="eyebrow">Opening Hours</span>
+      <h2 class="h-section" style="font-size:36px; margin: 12px 0 18px;">Open 7 days.</h2>
+      <ul class="hours-list">
+        <li><strong>Monday</strong><span class="dotted"></span><span>7:00 – 5:00</span></li>
+        <li><strong>Tuesday</strong><span class="dotted"></span><span>7:00 – 5:00</span></li>
+        <li><strong>Wednesday</strong><span class="dotted"></span><span>7:00 – 5:00</span></li>
+        <li><strong>Thursday</strong><span class="dotted"></span><span>7:00 – 5:00</span></li>
+        <li><strong>Friday</strong><span class="dotted"></span><span>7:00 – 5:00</span></li>
+        <li><strong>Saturday</strong><span class="dotted"></span><span>7:30 – 5:00</span></li>
+        <li><strong>Sunday</strong><span class="dotted"></span><span>7:30 – 5:00</span></li>
+      </ul>
+      <p class="muted" style="margin-top:16px; font-size:13px;">
+        Last orders for the kitchen are 4:30pm. Coffee bench runs til 5.
+      </p>
+    </div>
+
+    <!-- Address + contact card -->
+    <div class="sticker teal address-card">
+      <span class="eyebrow" style="color:var(--color-yellow)">Find Us</span>
+      <h2 class="h-section" style="font-size:36px; margin: 12px 0 18px; color:#fff">
+        Little Builders Lane.
+      </h2>
+      <p class="address-line">123 Little Builders Lane<br />Playtown VIC 3000</p>
+      <div class="contact-grid">
+        <a href="tel:+61312345678" class="contact-tile">
+          <span class="ct-ico">☎</span>
+          <div>
+            <small>Phone</small>
+            <strong>(03) 1234 5678</strong>
+          </div>
+        </a>
+        <a href="mailto:hello@littletradiescafe.com.au" class="contact-tile">
+          <span class="ct-ico">✉</span>
+          <div>
+            <small>Email</small>
+            <strong>hello@littletradiescafe.com.au</strong>
+          </div>
+        </a>
+      </div>
+      <div class="row" style="margin-top:22px">
+        <a class="btn primary" href="#">Open in Google Maps →</a>
+      </div>
+    </div>
+
+    <!-- Map illustration -->
+    <div class="map-card sticker flat">
+      <div class="map-canvas">
+        <!-- Stylised illustrated map. SVG draws a tiny street grid + a pin -->
+        <svg viewBox="0 0 600 380" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse">
+              <circle cx="2" cy="2" r="1.2" fill="rgba(47,78,104,0.12)" />
+            </pattern>
+          </defs>
+          <!-- background -->
+          <rect width="600" height="380" fill="#F7F3EA"/>
+          <rect width="600" height="380" fill="url(#dots)"/>
+          <!-- park -->
+          <rect x="40" y="40" width="160" height="120" rx="14" fill="#D5DDC6"/>
+          <text x="70" y="105" font-family="Caveat,cursive" font-size="22" fill="#5B6B47">Builders Park</text>
+          <!-- streets -->
+          <rect x="0" y="190" width="600" height="40" fill="#fff" stroke="#2F4E68" stroke-width="2"/>
+          <rect x="240" y="0" width="40" height="380" fill="#fff" stroke="#2F4E68" stroke-width="2"/>
+          <!-- dashes -->
+          <line x1="0" y1="210" x2="600" y2="210" stroke="#F4C542" stroke-width="3" stroke-dasharray="14 12"/>
+          <line x1="260" y1="0" x2="260" y2="380" stroke="#F4C542" stroke-width="3" stroke-dasharray="14 12"/>
+          <!-- buildings -->
+          <rect x="300" y="60" width="120" height="100" rx="8" fill="#fff" stroke="#2F4E68" stroke-width="2"/>
+          <rect x="440" y="40" width="120" height="120" rx="8" fill="#fff" stroke="#2F4E68" stroke-width="2"/>
+          <rect x="40" y="250" width="180" height="110" rx="8" fill="#fff" stroke="#2F4E68" stroke-width="2"/>
+          <rect x="430" y="250" width="140" height="110" rx="8" fill="#fff" stroke="#2F4E68" stroke-width="2"/>
+          <!-- Our cafe spot -->
+          <rect x="305" y="245" width="120" height="120" rx="10" fill="#1F8A8A" stroke="#2F4E68" stroke-width="3"/>
+          <text x="320" y="280" font-family="Fredoka, Fredoka One, sans-serif" font-size="16" fill="#fff">Little Tradies</text>
+          <text x="320" y="300" font-family="Fredoka, Fredoka One, sans-serif" font-size="16" fill="#F4C542">Cafe</text>
+          <text x="320" y="340" font-family="Caveat,cursive" font-size="16" fill="#fff">★ that's us!</text>
+          <!-- Pin -->
+          <g transform="translate(355, 220)">
+            <path d="M0,-40 C20,-40 28,-22 28,-10 C28,8 0,30 0,30 C0,30 -28,8 -28,-10 C-28,-22 -20,-40 0,-40 Z" fill="#E67E22" stroke="#2F4E68" stroke-width="3"/>
+            <circle cx="0" cy="-14" r="8" fill="#fff" stroke="#2F4E68" stroke-width="2"/>
+          </g>
+          <!-- street label -->
+          <text x="490" y="180" font-family="Bebas Neue, sans-serif" font-size="14" fill="#2F4E68" letter-spacing="2">LITTLE BUILDERS LN</text>
+        </svg>
+        <div class="map-tag">123 Little Builders Lane, Playtown</div>
+      </div>
+    </div>
+
+  </div>
+
+  <style>
+    .visit-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 22px;
+    }
+    .map-card { grid-column: 1 / -1; padding: 0; overflow: hidden; }
+    .hours-card, .address-card { padding: 28px 30px; }
+    .hours-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+    .hours-list li { display: flex; align-items: baseline; gap: 8px; font-size: 15px; }
+    .hours-list strong { font-family: var(--font-display); color: var(--color-navy); font-size: 18px; font-weight: 400; min-width: 110px; }
+    .hours-list .dotted { flex: 1; border-bottom: 2px dotted var(--tint-navy-15); height: 6px; }
+    .hours-list span { font-family: var(--font-hand); color: var(--color-orange); font-size: 18px; font-weight: 700; }
+
+    .address-card .address-line {
+      font-family: var(--font-display);
+      font-size: 28px;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 22px;
+    }
+    .contact-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+    .contact-tile {
+      display: flex; align-items: center; gap: 14px;
+      padding: 12px 16px;
+      background: rgba(255,255,255,0.12);
+      border: 2px solid rgba(255,255,255,0.2);
+      border-radius: 16px;
+      text-decoration: none; color: #fff;
+      transition: background 150ms;
+    }
+    .contact-tile:hover { background: rgba(255,255,255,0.22); }
+    .ct-ico {
+      width: 38px; height: 38px;
+      border-radius: 12px;
+      background: var(--color-yellow);
+      color: var(--color-navy);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; font-weight: 900;
+      flex-shrink: 0;
+    }
+    .contact-tile small { display: block; font-family: var(--font-label); font-size: 11px; letter-spacing: 0.1em; opacity: .8; }
+    .contact-tile strong { font-size: 14px; }
+
+    .map-canvas { position: relative; aspect-ratio: 16/7; }
+    .map-canvas svg { width: 100%; height: 100%; display: block; }
+    .map-tag {
+      position: absolute; left: 24px; bottom: 24px;
+      background: #fff;
+      border: 2px solid var(--color-navy);
+      padding: 10px 16px;
+      border-radius: 12px;
+      font-family: var(--font-display);
+      color: var(--color-navy);
+      box-shadow: 4px 4px 0 var(--color-navy);
+    }
+
+    @media (max-width: 780px) {
+      .visit-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</section>
+
+<!-- BOOKING FORM -->
+<section id="book" class="section section-cream-soft">
+  <div class="container">
+    <div class="book-grid">
+      <div>
+        <span class="eyebrow">Book a Table</span>
+        <h2 class="h-section" style="margin: 14px 0 16px;">Save your bench.</h2>
+        <p style="font-size:17px; line-height:1.6; max-width:480px; margin-bottom: 22px;">
+          Bookings open for parties of 6 or more. Smaller groups, just walk in —
+          there's almost always space.
+        </p>
+        <ul class="check-list" style="margin-bottom:24px">
+          <li>Reserved table held for 15 minutes past your booking</li>
+          <li>One free babycino per child with any adult coffee</li>
+          <li>Birthday builds — message us, we'll send the party menu</li>
+          <li>Groups of 12+ — let us know food preferences in the notes</li>
+        </ul>
+        <div style="display:flex; gap:14px; align-items:center;">
+          <img src="assets/illust-helmet.png" alt="" style="width:80px;" />
+          <p class="script" style="font-size:24px; color:var(--color-teal);">
+            See you on the worksite!
+          </p>
+        </div>
+      </div>
+
+      <form class="book-form sticker" id="bookForm" onsubmit="event.preventDefault(); document.getElementById('bookForm').classList.add('hidden'); document.getElementById('bookSuccess').classList.add('show');">
+        <div class="form-grid">
+          <div class="field">
+            <label>Your name</label>
+            <input type="text" placeholder="First & last" required />
+          </div>
+          <div class="field">
+            <label>Phone</label>
+            <input type="tel" placeholder="04 XX XXX XXX" required />
+          </div>
+          <div class="field full">
+            <label>Email</label>
+            <input type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="field">
+            <label>Date</label>
+            <input type="date" required />
+          </div>
+          <div class="field">
+            <label>Time</label>
+            <select required>
+              <option value="">Pick a time</option>
+              <option>7:30am</option>
+              <option>8:30am</option>
+              <option>9:30am</option>
+              <option>10:30am</option>
+              <option>11:30am</option>
+              <option>12:30pm</option>
+              <option>1:30pm</option>
+              <option>2:30pm</option>
+              <option>3:30pm</option>
+              <option>4:00pm</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Adults</label>
+            <select required>
+              <option value="">—</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7</option><option>8+</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Kids</label>
+            <select required>
+              <option value="">—</option>
+              <option>0</option><option>1</option><option>2</option><option>3</option>
+              <option>4</option><option>5</option><option>6+</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label>What's the occasion? (optional)</label>
+            <div class="chip-row">
+              <label class="chip-radio"><input type="radio" name="occ" /><span>Just brekkie</span></label>
+              <label class="chip-radio"><input type="radio" name="occ" /><span>Playdate</span></label>
+              <label class="chip-radio"><input type="radio" name="occ" /><span>Birthday build</span></label>
+              <label class="chip-radio"><input type="radio" name="occ" /><span>Workshop</span></label>
+            </div>
+          </div>
+          <div class="field full">
+            <label>Anything we should know?</label>
+            <textarea placeholder="Allergies, prams, big highchairs welcome — tell us anything that helps us be ready."></textarea>
+          </div>
+          <div class="field full">
+            <button class="btn primary lg" type="submit" style="width:100%; justify-content:center;">
+              Send booking request →
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div id="bookSuccess" class="book-success sticker teal">
+        <img src="assets/illust-truck.png" alt="" style="width:120px; margin: 0 auto 8px; display:block;" />
+        <h2 class="h-section" style="font-size:36px; color:#fff; margin-bottom:8px; text-align:center;">You're on the list!</h2>
+        <p style="font-size:16px; color:#fff; text-align:center; line-height:1.6;">
+          We'll text you to confirm within an hour. If it's urgent, give us a buzz on
+          <strong style="color:var(--color-yellow)">(03) 1234 5678</strong>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .book-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 40px; align-items: start; }
+    .book-form { padding: 28px 30px; position: relative; }
+    .book-form.hidden { display: none; }
+    .book-success { padding: 36px 32px; max-width: 480px; margin-top: 0; display: none; }
+    .book-success.show { display: block; animation: float-up 500ms var(--ease-out); }
+    .chip-row { display: flex; gap: 8px; flex-wrap: wrap; }
+    .chip-radio { cursor: pointer; }
+    .chip-radio input { display: none; }
+    .chip-radio span {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 9999px;
+      border: 2px solid var(--tint-navy-15);
+      background: #fff;
+      font-family: var(--font-label);
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      color: var(--color-navy);
+      transition: all 150ms;
+    }
+    .chip-radio input:checked + span {
+      background: var(--color-yellow);
+      border-color: var(--color-navy);
+    }
+    @media (max-width: 880px) { .book-grid { grid-template-columns: 1fr; } }
+  </style>
+</section>
+
+<!-- FAQ -->
+<section class="section container">
+  <div style="text-align:center; max-width:680px; margin: 0 auto 36px;">
+    <span class="eyebrow">Frequently Asked</span>
+    <h2 class="h-section" style="margin:14px 0 6px;">Before you swing by.</h2>
+  </div>
+
+  <div class="faq-list">
+    <details class="faq" open>
+      <summary>Do we need to book?</summary>
+      <p>Not for groups of 5 or fewer — just walk in. For 6+ or for a birthday build, please use the form above so we can hold a table.</p>
+    </details>
+    <details class="faq">
+      <summary>What's the play zone age range?</summary>
+      <p>The zones are designed for 2–10 year olds. Under-2s can pop in for free with a paying sibling — parents stay on site at all times.</p>
+    </details>
+    <details class="faq">
+      <summary>Is there parking?</summary>
+      <p>Yes — 20 free spots out the front, plus a pram-friendly drop-off lane. Bike racks under the awning.</p>
+    </details>
+    <details class="faq">
+      <summary>Can we bring our own cake?</summary>
+      <p>Only for confirmed birthday-build bookings (cakeage waived). Otherwise outside food &amp; drink stay outside, please.</p>
+    </details>
+    <details class="faq">
+      <summary>Do you cater to allergies?</summary>
+      <p>We've got veggie, vegan and gluten-friendly options on the regular menu. For severe allergies (especially nuts), drop us a line ahead of time so we can prep safely.</p>
+    </details>
+    <details class="faq">
+      <summary>Are dogs allowed?</summary>
+      <p>Friendly dogs are welcome at the outdoor benches. The indoor cafe and play zone are a no-dog zone for hygiene and allergy reasons.</p>
+    </details>
+    <details class="faq">
+      <summary>What does Tradie of the Month get?</summary>
+      <p>A coffee on the house every day for the month, their photo and story on the wall, a feature in the newsletter, and a tagged shout on our socials.</p>
+    </details>
+  </div>
+
+  <style>
+    .faq-list { display: flex; flex-direction: column; gap: 12px; max-width: 880px; margin: 0 auto; }
+    .faq {
+      background: #fff;
+      border: 2px solid var(--tint-navy-15);
+      border-radius: 18px;
+      padding: 16px 22px;
+      transition: border-color 200ms;
+    }
+    .faq[open] { border-color: var(--color-navy); }
+    .faq summary {
+      cursor: pointer;
+      font-family: var(--font-heading);
+      font-size: 18px;
+      color: var(--color-navy);
+      list-style: none;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after {
+      content: "+";
+      font-family: var(--font-display);
+      color: var(--color-orange);
+      font-size: 28px;
+      line-height: 1;
+      transition: transform 200ms;
+    }
+    .faq[open] summary::after { content: "−"; }
+    .faq p { margin-top: 10px; font-size: 15px; line-height: 1.6; }
+  </style>
+</section>
+
+<!-- CHALK -->
+<section class="chalk-band" style="min-height: 200px; padding: 48px 24px;">
+  <div class="slogan">
+    <span style="color:#1F8A8A">BUILD.</span>
+    <span style="color:#F4C542">PLAY.</span>
+    <span style="color:#E67E22">EAT.</span>
+    <span style="color:#fff">REPEAT!</span>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="lt-footer">
+  <div class="scallop" aria-hidden="true"></div>
+  <div class="container footer-grid">
+    <div class="brand-col">
+      <img src="assets/logo-final.png" alt="Little Tradies Cafe" />
+      <p class="ftag">Built for play. Brewed for parents. <span class="heart">♡</span></p>
+    </div>
+    <div>
+      <h4>Visit Us</h4>
+      <p><span class="ico">▣</span> 123 Little Builders Lane<br />&nbsp;&nbsp;&nbsp;&nbsp;Playtown VIC 3000</p>
+      <p><span class="ico">◷</span> Open 7 Days<br />&nbsp;&nbsp;&nbsp;&nbsp;7:00am – 5:00pm</p>
+    </div>
+    <div>
+      <h4>Get in Touch</h4>
+      <p><span class="ico">☎</span> (03) 1234 5678</p>
+      <p><span class="ico">✉</span> hello@littletradiescafe.com.au</p>
+      <p><span class="ico">⌖</span> littletradiescafe.com.au</p>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <div class="socials">
+        <a href="#" class="soc f" aria-label="Facebook">f</a>
+        <a href="#" class="soc i" aria-label="Instagram">◉</a>
+        <a href="#" class="soc t" aria-label="TikTok">♪</a>
+      </div>
+      <p class="thanks">Thanks for supporting<br />local &amp; family! <span class="heart">♡</span></p>
+    </div>
+  </div>
+  <div class="copybar">
+    <div class="container copybar-row">
+      <span>© 2026 Little Tradies Cafe · Built for play. Brewed for parents.</span>
+      <span><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms &amp; Conditions</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

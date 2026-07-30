@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Community — Little Tradies Cafe</title>
+<meta name="description" content="Tradie of the Month, local events, and the families who built this place." />
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" href="assets/illust-helmet.png" />
+</head>
+<body data-screen-label="05 Community">
+
+<!-- NAV -->
+<div class="container nav-wrap">
+  <nav class="nav">
+    <a class="nav-brand" href="index.html" aria-label="Little Tradies Cafe — home">
+      <img src="assets/logo-final.png" alt="Little Tradies Cafe" />
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="play.html">Play Zone</a>
+      <a href="toys.html">Toys</a>
+      <a href="community.html" class="active">Local Tradie</a>
+      <a href="visit.html">Visit Us</a>
+    </div>
+    <a class="btn primary nav-cta" href="#">Daily Deal <span class="star">★</span></a>
+    <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section class="page-hero container">
+  <div class="blob" style="background:#E87A5B; top:-80px; right:-80px;"></div>
+  <div class="blob" style="background:#7D8B6A; bottom:-100px; left:-80px;"></div>
+  <div class="page-hero-grid">
+    <div class="fade-up">
+      <span class="eyebrow">Our Community</span>
+      <h1 class="h-display" style="margin-top:14px">
+        Built for kids.<br />
+        <span style="color:var(--color-coral)">Backed by tradies.</span>
+      </h1>
+      <p class="lead">
+        Every month we celebrate a local builder, sparkie or chippie on
+        our wall — and shout them a coffee. They're the heroes that
+        keep our streets standing.
+      </p>
+      <div class="row" style="margin-top:24px">
+        <a class="btn primary lg" href="#nominate">Nominate a tradie →</a>
+        <a class="btn outline lg" href="#events">See what's on</a>
+      </div>
+    </div>
+    <div class="page-hero-art fade-up d2">
+      <img src="assets/illust-excavator.png" alt="Cartoon excavator" />
+    </div>
+  </div>
+</section>
+
+<div class="hazard"></div>
+
+<!-- TRADIE OF THE MONTH -->
+<section class="section container">
+  <div style="text-align:center; max-width:680px; margin: 0 auto 48px;">
+    <span class="eyebrow">Tradie of the Month</span>
+    <h2 class="h-section" style="margin:14px 0 12px;">May 2026 — meet the crew.</h2>
+    <p class="script">Real-world heroes. On the wall. On the house.</p>
+  </div>
+
+  <div class="totm-grid">
+    <article class="totm-card sticker">
+      <div class="totm-photo" style="background: linear-gradient(160deg,#F4C542,#C29622);">
+        <img src="assets/illust-helmet.png" alt="" />
+        <span class="totm-ribbon">★ This Month</span>
+      </div>
+      <div class="totm-body">
+        <span class="pill yellow">Builder</span>
+        <h3 class="h-card" style="margin:8px 0 4px; font-size:24px;">Sam &amp; the SK Builders crew</h3>
+        <p class="totm-loc">Playtown South · 12 years on the tools</p>
+        <p class="totm-quote">"Built our front porch in a weekend.<br />The kids still talk about the cement mixer."</p>
+        <p class="totm-sub">— The Murphys, regulars</p>
+      </div>
+    </article>
+
+    <div class="totm-side">
+      <h3 class="h-card" style="margin-bottom:14px">Recent Tradies on the wall</h3>
+      <a href="#" class="totm-row">
+        <div class="totm-row-art" style="background: rgba(31,138,138,.18);"><img src="assets/illust-loader.png" alt="" /></div>
+        <div>
+          <span class="pill teal">Sparkie</span>
+          <p><strong>Priya &amp; Co Electrical</strong></p>
+          <p class="muted">April 2026</p>
+        </div>
+      </a>
+      <a href="#" class="totm-row">
+        <div class="totm-row-art" style="background: rgba(230,126,34,.18);"><img src="assets/illust-toolbox.png" alt="" /></div>
+        <div>
+          <span class="pill orange">Chippie</span>
+          <p><strong>Dan Walsh Carpentry</strong></p>
+          <p class="muted">March 2026</p>
+        </div>
+      </a>
+      <a href="#" class="totm-row">
+        <div class="totm-row-art" style="background: rgba(125,139,106,.20);"><img src="assets/illust-grader.png" alt="" /></div>
+        <div>
+          <span class="pill sage">Painter</span>
+          <p><strong>Aroha Paint &amp; Co</strong></p>
+          <p class="muted">February 2026</p>
+        </div>
+      </a>
+      <a href="#" class="totm-row">
+        <div class="totm-row-art" style="background: rgba(232,122,91,.18);"><img src="assets/illust-steamroller.png" alt="" /></div>
+        <div>
+          <span class="pill coral">Bricky</span>
+          <p><strong>Mick Lay Bricklaying</strong></p>
+          <p class="muted">January 2026</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <style>
+    .totm-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; align-items: start; }
+    .totm-card { padding: 0; overflow: hidden; }
+    .totm-photo {
+      position: relative;
+      aspect-ratio: 16/9;
+      display: flex; align-items: center; justify-content: center;
+      border-bottom: 3px solid var(--color-navy);
+    }
+    .totm-photo img { width: 40%; max-width: 220px; filter: drop-shadow(0 12px 22px rgba(0,0,0,0.25)); transform: rotate(-4deg); }
+    .totm-ribbon {
+      position: absolute; top: 18px; left: -8px;
+      background: var(--color-orange); color: #fff;
+      padding: 8px 18px; padding-left: 22px;
+      font-family: var(--font-label); font-size: 14px; letter-spacing: 0.1em;
+      box-shadow: 0 4px 0 rgba(0,0,0,0.2);
+    }
+    .totm-body { padding: 22px 26px 26px; }
+    .totm-loc { font-size: 14px; color: var(--fg-muted); margin-bottom: 12px; }
+    .totm-quote {
+      font-family: var(--font-script); font-weight: 700;
+      font-size: 22px;
+      line-height: 1.3;
+      color: var(--color-navy);
+      padding-left: 14px;
+      border-left: 4px solid var(--color-yellow);
+      margin-bottom: 6px;
+    }
+    .totm-sub { font-size: 13px; color: var(--fg-muted); }
+
+    .totm-side { display: flex; flex-direction: column; gap: 12px; }
+    .totm-row {
+      display: grid; grid-template-columns: 64px 1fr;
+      gap: 14px;
+      align-items: center;
+      background: #fff;
+      border: 2px solid var(--tint-navy-15);
+      border-radius: 18px;
+      padding: 12px 16px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 200ms var(--ease-bounce), border-color 200ms;
+    }
+    .totm-row:hover { transform: translateX(4px); border-color: var(--color-navy); }
+    .totm-row-art {
+      width: 64px; height: 64px;
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .totm-row-art img { width: 70%; }
+    .totm-row p { font-size: 15px; margin: 6px 0 0; }
+    .totm-row .muted { font-size: 12px; }
+
+    @media (max-width: 880px) {
+      .totm-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</section>
+
+<!-- NOMINATE STRIP -->
+<section id="nominate" class="section section-cream-soft">
+  <div class="container">
+    <div class="nominate-band sticker" style="background:#fff; border-color:var(--color-orange); border-width: 4px; box-shadow: 6px 6px 0 var(--color-orange); padding: 36px 40px;">
+      <div class="nominate-grid">
+        <div>
+          <span class="eyebrow">Know a legend?</span>
+          <h2 class="h-section" style="margin:12px 0 12px">Nominate a tradie.</h2>
+          <p style="font-size:16px; line-height:1.6; max-width:480px;">
+            Drop us a name and a sentence on why they deserve the wall.
+            Each month's pick gets a free coffee for a year and a feature in our newsletter.
+          </p>
+        </div>
+        <form class="nominate-form" onsubmit="event.preventDefault(); alert('Thanks for the nomination — we\\'ll be in touch!');">
+          <div class="field full">
+            <label>Tradie name &amp; trade</label>
+            <input type="text" placeholder="e.g. Sam — Builder" required />
+          </div>
+          <div class="field full">
+            <label>Why do they deserve the wall?</label>
+            <textarea placeholder="One sentence is plenty." required></textarea>
+          </div>
+          <div class="field full" style="margin-top: 6px">
+            <button class="btn primary lg" type="submit">Submit nomination →</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <style>
+    .nominate-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+    .nominate-form { display: flex; flex-direction: column; gap: 10px; }
+    @media (max-width: 760px) { .nominate-grid { grid-template-columns: 1fr; } }
+  </style>
+</section>
+
+<!-- EVENTS -->
+<section id="events" class="section container">
+  <div style="text-align:center; max-width:680px; margin: 0 auto 48px;">
+    <span class="eyebrow">What's on</span>
+    <h2 class="h-section" style="margin:14px 0 12px;">This month's site noticeboard.</h2>
+    <p class="muted">Workshops, meetups, community days and the occasional cake.</p>
+  </div>
+
+  <div class="events-list">
+    <article class="event-row sticker flat">
+      <div class="event-date">
+        <span class="ed-day">22</span>
+        <span class="ed-mon">MAY</span>
+        <span class="ed-time">9:00am</span>
+      </div>
+      <div class="event-body">
+        <div class="row" style="gap:8px; margin-bottom:6px;">
+          <span class="pill teal">Workshop</span>
+          <span class="pill yellow">Ages 4–7</span>
+        </div>
+        <h3 class="h-card">Hammer &amp; Hang — coat hooks</h3>
+        <p>Build a wooden coat hook with our resident chippie. Sand it, drill it, take it home.</p>
+      </div>
+      <div class="event-cta">
+        <span class="event-price">$15</span>
+        <a class="btn outline" href="visit.html#book">Book →</a>
+      </div>
+    </article>
+
+    <article class="event-row sticker flat">
+      <div class="event-date" style="background:var(--color-orange); color:#fff;">
+        <span class="ed-day">25</span>
+        <span class="ed-mon">MAY</span>
+        <span class="ed-time">6:30pm</span>
+      </div>
+      <div class="event-body">
+        <div class="row" style="gap:8px; margin-bottom:6px;">
+          <span class="pill orange">Parents Night</span>
+          <span class="pill yellow">21+</span>
+        </div>
+        <h3 class="h-card">Tradies &amp; Mums Pub Quiz</h3>
+        <p>BYO competitive streak. Teams of four, prizes from local sponsors, finger food on the house.</p>
+      </div>
+      <div class="event-cta">
+        <span class="event-price">Free</span>
+        <a class="btn outline" href="visit.html#book">RSVP →</a>
+      </div>
+    </article>
+
+    <article class="event-row sticker flat">
+      <div class="event-date" style="background:var(--color-sage); color:#fff;">
+        <span class="ed-day">01</span>
+        <span class="ed-mon">JUN</span>
+        <span class="ed-time">10:00am</span>
+      </div>
+      <div class="event-body">
+        <div class="row" style="gap:8px; margin-bottom:6px;">
+          <span class="pill sage">Community</span>
+          <span class="pill teal">All ages</span>
+        </div>
+        <h3 class="h-card">First-Sunday Site Cleanup</h3>
+        <p>Litter pick around Little Builders Lane. Vests provided, sausage roll for every volunteer afterwards.</p>
+      </div>
+      <div class="event-cta">
+        <span class="event-price">Free</span>
+        <a class="btn outline" href="visit.html#book">Join →</a>
+      </div>
+    </article>
+
+    <article class="event-row sticker flat">
+      <div class="event-date" style="background:var(--color-coral); color:#fff;">
+        <span class="ed-day">08</span>
+        <span class="ed-mon">JUN</span>
+        <span class="ed-time">2:00pm</span>
+      </div>
+      <div class="event-body">
+        <div class="row" style="gap:8px; margin-bottom:6px;">
+          <span class="pill coral">Open Day</span>
+          <span class="pill teal">All ages</span>
+        </div>
+        <h3 class="h-card">Big Yellow Open Day</h3>
+        <p>Bring the kids — real diggers in the carpark, sausage sizzle, free babycinos, hi-vis dress-ups.</p>
+      </div>
+      <div class="event-cta">
+        <span class="event-price">Free</span>
+        <a class="btn outline" href="visit.html#book">Save the date →</a>
+      </div>
+    </article>
+  </div>
+
+  <style>
+    .events-list { display: flex; flex-direction: column; gap: 16px; }
+    .event-row {
+      display: grid;
+      grid-template-columns: 110px 1fr auto;
+      gap: 22px;
+      align-items: center;
+      padding: 16px 18px;
+    }
+    .event-date {
+      background: var(--color-teal);
+      color: #fff;
+      border-radius: 18px;
+      padding: 12px 8px;
+      text-align: center;
+      font-family: var(--font-display);
+      line-height: 1;
+    }
+    .ed-day { display: block; font-size: 36px; }
+    .ed-mon { display: block; font-size: 14px; letter-spacing: 0.1em; margin-top: 4px; }
+    .ed-time { display: block; font-family: var(--font-body); font-weight: 800; font-size: 12px; margin-top: 6px; }
+    .event-body p { font-size: 14px; line-height: 1.5; margin-top: 4px; }
+    .event-cta { display: flex; align-items: center; gap: 14px; }
+    .event-price {
+      font-family: var(--font-display);
+      color: var(--color-orange);
+      font-size: 28px;
+    }
+    @media (max-width: 720px) {
+      .event-row { grid-template-columns: 1fr; }
+      .event-date { display: flex; gap: 10px; align-items: center; justify-content: center; padding: 10px 14px; }
+      .ed-day, .ed-mon, .ed-time { display: inline; margin: 0; font-size: 16px; }
+      .ed-day { font-size: 24px; }
+      .event-cta { justify-content: space-between; }
+    }
+  </style>
+</section>
+
+<!-- WALL OF FAMILIES (gallery) -->
+<section class="section section-cream-soft">
+  <div class="container">
+    <div style="text-align:center; max-width:680px; margin: 0 auto 40px;">
+      <span class="eyebrow">Wall of Families</span>
+      <h2 class="h-section" style="margin:14px 0 6px;">The regulars who built this place.</h2>
+      <p class="muted">Tag <strong>#LittleTradies</strong> on the gram. We feature one a week.</p>
+    </div>
+
+    <div class="wall-grid">
+      <!-- Stylised polaroid-style cards using illustrations + bg as photo placeholders -->
+      <figure class="polaroid" style="--tilt:-3deg;">
+        <div class="poly-photo" style="background: linear-gradient(160deg, #b08454, #6E5238);"><img src="assets/illust-truck.png" alt="" /></div>
+        <figcaption>The Murphys · regulars since day one</figcaption>
+      </figure>
+      <figure class="polaroid" style="--tilt:2deg;">
+        <div class="poly-photo" style="background: linear-gradient(160deg, #1F8A8A, #155656);"><img src="assets/illust-coffee-cup.png" alt="" /></div>
+        <figcaption>Mums on Mondays · 6:30am club</figcaption>
+      </figure>
+      <figure class="polaroid" style="--tilt:-2deg;">
+        <div class="poly-photo" style="background: linear-gradient(160deg, #F4C542, #B68F1B);"><img src="assets/illust-helmet.png" alt="" /></div>
+        <figcaption>Lottie's 4th birthday · cement-mixer cake</figcaption>
+      </figure>
+      <figure class="polaroid" style="--tilt:3deg;">
+        <div class="poly-photo" style="background: linear-gradient(160deg, #E67E22, #B25A12);"><img src="assets/illust-toolbox.png" alt="" /></div>
+        <figcaption>Dan, the chippie · workshop crew</figcaption>
+      </figure>
+      <figure class="polaroid" style="--tilt:-1deg;">
+        <div class="poly-photo" style="background: linear-gradient(160deg, #7D8B6A, #4F5B40);"><img src="assets/illust-grader.png" alt="" /></div>
+        <figcaption>Open Day · diggers in the carpark</figcaption>
+      </figure>
+      <figure class="polaroid" style="--tilt:2deg;">
+        <div class="poly-photo" style="background: linear-gradient(160deg, #E87A5B, #B14A2F);"><img src="assets/illust-excavator.png" alt="" /></div>
+        <figcaption>The Patel twins · brick-lay champs</figcaption>
+      </figure>
+    </div>
+
+    <p class="center-text" style="margin-top:32px;">
+      <a class="btn outline" href="#">Follow us on Instagram →</a>
+    </p>
+  </div>
+
+  <style>
+    .wall-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .polaroid {
+      background: #fff;
+      padding: 14px 14px 16px;
+      border-radius: 8px;
+      box-shadow: 4px 4px 0 var(--color-navy);
+      border: 2px solid var(--color-navy);
+      margin: 0;
+      transform: rotate(var(--tilt, 0deg));
+      transition: transform 200ms var(--ease-bounce);
+    }
+    .polaroid:hover { transform: rotate(0deg) translateY(-4px); }
+    .poly-photo {
+      aspect-ratio: 1;
+      border-radius: 4px;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+    .poly-photo img { width: 60%; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.3)); }
+    .polaroid figcaption {
+      font-family: var(--font-script);
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--color-navy);
+      text-align: center;
+      line-height: 1.3;
+      padding: 0 4px;
+    }
+    @media (max-width: 800px) { .wall-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 520px) { .wall-grid { grid-template-columns: 1fr; } }
+  </style>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section">
+  <div class="container">
+    <div class="newsletter sticker" style="background:var(--color-yellow); border-color:var(--color-navy); padding: 40px 48px;">
+      <div class="newsletter-grid">
+        <div>
+          <span class="eyebrow" style="color:var(--color-navy)">Site Update</span>
+          <h2 class="h-section" style="margin:12px 0 8px; color:var(--color-navy);">Get the monthly noticeboard.</h2>
+          <p style="font-size:16px; color:var(--color-navy); line-height:1.6; max-width:480px;">
+            What's on, who's on the wall, new menu items, and the odd
+            cement-mixer cake recipe. No spam, just the worksite update.
+          </p>
+        </div>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Welcome to the crew!');">
+          <div class="field full">
+            <label style="color:var(--color-navy)">Your email</label>
+            <input type="email" placeholder="you@example.com" required />
+          </div>
+          <button class="btn navy lg" type="submit">Subscribe →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <style>
+    .newsletter-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 32px; align-items: center; }
+    .newsletter-form { display: flex; flex-direction: column; gap: 12px; }
+    @media (max-width: 760px) { .newsletter-grid { grid-template-columns: 1fr; } }
+  </style>
+</section>
+
+<!-- FOOTER -->
+<footer class="lt-footer">
+  <div class="scallop" aria-hidden="true"></div>
+  <div class="container footer-grid">
+    <div class="brand-col">
+      <img src="assets/logo-final.png" alt="Little Tradies Cafe" />
+      <p class="ftag">Built for play. Brewed for parents. <span class="heart">♡</span></p>
+    </div>
+    <div>
+      <h4>Visit Us</h4>
+      <p><span class="ico">▣</span> 123 Little Builders Lane<br />&nbsp;&nbsp;&nbsp;&nbsp;Playtown VIC 3000</p>
+      <p><span class="ico">◷</span> Open 7 Days<br />&nbsp;&nbsp;&nbsp;&nbsp;7:00am – 5:00pm</p>
+    </div>
+    <div>
+      <h4>Get in Touch</h4>
+      <p><span class="ico">☎</span> (03) 1234 5678</p>
+      <p><span class="ico">✉</span> hello@littletradiescafe.com.au</p>
+      <p><span class="ico">⌖</span> littletradiescafe.com.au</p>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <div class="socials">
+        <a href="#" class="soc f" aria-label="Facebook">f</a>
+        <a href="#" class="soc i" aria-label="Instagram">◉</a>
+        <a href="#" class="soc t" aria-label="TikTok">♪</a>
+      </div>
+      <p class="thanks">Thanks for supporting<br />local &amp; family! <span class="heart">♡</span></p>
+    </div>
+  </div>
+  <div class="copybar">
+    <div class="container copybar-row">
+      <span>© 2026 Little Tradies Cafe · Built for play. Brewed for parents.</span>
+      <span><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms &amp; Conditions</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

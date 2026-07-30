@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Menu — Little Tradies Cafe</title>
+<meta name="description" content="Brekkie, mains, sweets, drinks and a kids menu built for sticky fingers." />
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" href="assets/illust-helmet.png" />
+</head>
+<body data-screen-label="03 Menu">
+
+<!-- NAV -->
+<div class="container nav-wrap">
+  <nav class="nav">
+    <a class="nav-brand" href="index.html" aria-label="Little Tradies Cafe — home">
+      <img src="assets/logo-final.png" alt="Little Tradies Cafe" />
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="play.html">Play Zone</a>
+      <a href="toys.html">Toys</a>
+      <a href="community.html">Local Tradie</a>
+      <a href="visit.html">Visit Us</a>
+    </div>
+    <a class="btn primary nav-cta" href="#">Daily Deal <span class="star">★</span></a>
+    <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section class="page-hero container">
+  <div class="blob" style="background:#E67E22; top:-100px; right:-80px;"></div>
+  <div class="blob" style="background:#F4C542; bottom:-100px; left:-100px;"></div>
+  <div class="page-hero-grid">
+    <div class="fade-up">
+      <span class="eyebrow">On the worksite menu</span>
+      <h1 class="h-display" style="margin-top:14px">
+        Built big.<br />
+        <span style="color:var(--color-orange)">Made fresh.</span>
+      </h1>
+      <p class="lead">
+        A short, honest menu that swings from babycino &amp; banana bread to
+        builder's brekkie roll. Local roast in the cups, local produce on the
+        plates, no fuss anywhere.
+      </p>
+      <div class="row" style="margin-top: 22px; gap: 8px;">
+        <span class="pill yellow">Halal-friendly</span>
+        <span class="pill sage">Veggie ✓</span>
+        <span class="pill teal">Babycino on the house</span>
+      </div>
+    </div>
+    <div class="page-hero-art fade-up d2">
+      <img src="assets/illust-loader.png" alt="Loader full of food" />
+    </div>
+  </div>
+</section>
+
+<div class="hazard"></div>
+
+<!-- MENU TABS / NAV -->
+<section class="container" style="padding: 28px 28px 0;">
+  <div class="menu-tabs">
+    <a href="#brekkie" class="menu-tab"><span>01</span> Brekkie</a>
+    <a href="#mains" class="menu-tab"><span>02</span> Mains</a>
+    <a href="#kids" class="menu-tab"><span>03</span> Kids</a>
+    <a href="#sweets" class="menu-tab"><span>04</span> Sweets</a>
+    <a href="#drinks" class="menu-tab"><span>05</span> Drinks</a>
+  </div>
+  <style>
+    .menu-tabs { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; padding: 18px; background: var(--color-cream-soft); border-radius: 9999px; border: 2px solid var(--tint-navy-15); box-shadow: var(--shadow-sm); }
+    .menu-tab {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 18px;
+      border-radius: 9999px;
+      background: #fff;
+      border: 2px solid var(--tint-navy-15);
+      font-family: var(--font-label);
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      color: var(--color-navy);
+      transition: all 150ms;
+    }
+    .menu-tab span { color: var(--color-orange); font-size: 13px; }
+    .menu-tab:hover { background: var(--color-yellow); border-color: var(--color-navy); }
+  </style>
+</section>
+
+<!-- ============= BREKKIE ============= -->
+<section id="brekkie" class="section container">
+  <div class="menu-section-head">
+    <span class="section-num">01</span>
+    <div>
+      <span class="eyebrow">Brekkie</span>
+      <h2 class="h-section" style="margin-top:6px">Served from 7:00am.</h2>
+    </div>
+    <img src="assets/illust-coffee-cup.png" alt="" />
+  </div>
+
+  <div class="menu-grid">
+    <article class="menu-item">
+      <div class="menu-name">
+        <h3>Builder's Brekkie Roll</h3>
+        <span class="pill teal">Hearty</span>
+      </div>
+      <p>Bacon, fried egg, hash brown, melted cheese and house BBQ on a milk bun. Big enough to fuel an early start.</p>
+      <span class="price-tag">$12.50</span>
+    </article>
+    <article class="menu-item">
+      <div class="menu-name">
+        <h3>Sourdough Stack</h3>
+        <span class="pill sage">Veggie</span>
+      </div>
+      <p>Smashed avo, two poached eggs, dukkah and a wedge of lemon on toasted local sourdough.</p>
+      <span class="price-tag">$16.00</span>
+    </article>
+    <article class="menu-item">
+      <div class="menu-name">
+        <h3>Banana Bread, Toasted</h3>
+        <span class="pill yellow">Classic</span>
+      </div>
+      <p>Thick-cut, lightly toasted, with cinnamon butter and a dusting of icing sugar.</p>
+      <span class="price-tag">$8.50</span>
+    </article>
+    <article class="menu-item">
+      <div class="menu-name">
+        <h3>Tradie Breakfast</h3>
+        <span class="pill orange">Big</span>
+      </div>
+      <p>Two eggs, bacon, sausage, hash brown, grilled tomato, mushrooms and toast. For when you're on tools all day.</p>
+      <span class="price-tag">$22.50</span>
+    </article>
+    <article class="menu-item">
+      <div class="menu-name">
+        <h3>Bircher Bowl</h3>
+        <span class="pill sage">Veggie</span>
+      </div>
+      <p>Overnight oats with apple, cinnamon, yoghurt, toasted nuts and a drizzle of honey.</p>
+      <span class="price-tag">$13.00</span>
+    </article>
+    <article class="menu-item">
+      <div class="menu-name">
+        <h3>Eggs on Toast</h3>
+        <span class="pill yellow">Classic</span>
+      </div>
+      <p>Free-range eggs your way — poached, fried or scrambled — on toasted sourdough.</p>
+      <span class="price-tag">$10.00</span>
+    </article>
+  </div>
+</section>
+
+<!-- ============= MAINS ============= -->
+<section id="mains" class="section section-cream-soft">
+  <div class="container">
+    <div class="menu-section-head">
+      <span class="section-num" style="color:var(--color-orange)">02</span>
+      <div>
+        <span class="eyebrow">Mains</span>
+        <h2 class="h-section" style="margin-top:6px">All day, every day.</h2>
+      </div>
+      <img src="assets/illust-loader.png" alt="" />
+    </div>
+
+    <div class="menu-grid">
+      <article class="menu-item">
+        <div class="menu-name">
+          <h3>Crinkle Cut Chips &amp; Aioli</h3>
+          <span class="pill yellow">Side</span>
+        </div>
+        <p>Crispy crinkles tossed in chicken salt, with a generous side of garlic aioli.</p>
+        <span class="price-tag">$9.00</span>
+      </article>
+      <article class="menu-item">
+        <div class="menu-name">
+          <h3>Steak Sandwich</h3>
+          <span class="pill orange">Big</span>
+        </div>
+        <p>Scotch fillet, caramelised onion, beetroot relish, rocket and aioli on a toasted Turkish roll.</p>
+        <span class="price-tag">$19.50</span>
+      </article>
+      <article class="menu-item">
+        <div class="menu-name">
+          <h3>Worksite Burger</h3>
+          <span class="pill teal">Signature</span>
+        </div>
+        <p>Wagyu patty, cheddar, pickles, lettuce, secret sauce, brioche. Comes with chips on the side.</p>
+        <span class="price-tag">$21.00</span>
+      </article>
+      <article class="menu-item">
+        <div class="menu-name">
+          <h3>Roast Veg Salad</h3>
+          <span class="pill sage">Veggie</span>
+        </div>
+        <p>Pumpkin, beetroot, quinoa, feta, candied walnuts and a honey-mustard dressing.</p>
+        <span class="price-tag">$17.50</span>
+      </article>
+      <article class="menu-item">
+        <div class="menu-name">
+          <h3>Pulled Pork Roll</h3>
+          <span class="pill orange">Big</span>
+        </div>
+        <p>Slow-cooked pork shoulder, slaw, pickles and smoky BBQ on a milk bun.</p>
+        <span class="price-tag">$16.50</span>
+      </article>
+      <article class="menu-item">
+        <div class="menu-name">
+          <h3>Soup of the Day</h3>
+          <span class="pill teal">Daily</span>
+        </div>
+        <p>Ask at the bench. Served with a thick slice of sourdough &amp; butter.</p>
+        <span class="price-tag">$13.00</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============= KIDS ============= -->
+<section id="kids" class="section container">
+  <div class="menu-section-head">
+    <span class="section-num" style="color:var(--color-yellow)">03</span>
+    <div>
+      <span class="eyebrow">Kids Menu</span>
+      <h2 class="h-section" style="margin-top:6px">For little tradies.</h2>
+    </div>
+    <img src="assets/illust-helmet.png" alt="" />
+  </div>
+
+  <div class="kids-grid">
+    <div class="kids-card sticker yellow">
+      <img src="assets/illust-loader.png" alt="" class="kids-img" />
+      <h3 class="h-card" style="color:var(--color-navy)">Nuggets &amp; Chips</h3>
+      <p style="color:var(--color-navy); font-size:14px;">Six crispy chicken nuggets with a heap of chips and tomato sauce.</p>
+      <span class="kids-price">$10</span>
+    </div>
+    <div class="kids-card sticker teal">
+      <img src="assets/illust-helmet.png" alt="" class="kids-img" />
+      <h3 class="h-card" style="color:#fff">Brekkie Roll Mini</h3>
+      <p style="color:rgba(255,255,255,0.92); font-size:14px;">A smaller bacon &amp; egg roll, just right for little builders.</p>
+      <span class="kids-price">$8</span>
+    </div>
+    <div class="kids-card sticker orange">
+      <img src="assets/illust-toolbox.png" alt="" class="kids-img" />
+      <h3 class="h-card" style="color:#fff">Snack Box</h3>
+      <p style="color:rgba(255,255,255,0.92); font-size:14px;">Cheese, crackers, carrot sticks, dip, strawberries and a sneaky biscuit.</p>
+      <span class="kids-price">$9</span>
+    </div>
+    <div class="kids-card sticker" style="background:var(--color-sage); color:#fff; border-color:var(--color-navy);">
+      <img src="assets/illust-grader.png" alt="" class="kids-img" />
+      <h3 class="h-card" style="color:#fff">Mini Pizza</h3>
+      <p style="color:rgba(255,255,255,0.92); font-size:14px;">Margherita or ham &amp; cheese, served with cucumber sticks.</p>
+      <span class="kids-price">$10</span>
+    </div>
+    <div class="kids-card sticker cream">
+      <img src="assets/illust-coffee-cup.png" alt="" class="kids-img" />
+      <h3 class="h-card">Babycino</h3>
+      <p style="font-size:14px;">Frothy milk, cocoa dust, marshmallow. On the house with any adult coffee.</p>
+      <span class="kids-price" style="color:var(--color-orange)">Free*</span>
+    </div>
+    <div class="kids-card sticker" style="background:var(--color-coral); color:#fff; border-color:var(--color-navy);">
+      <img src="assets/illust-steamroller.png" alt="" class="kids-img" />
+      <h3 class="h-card" style="color:#fff">Fruit Wheelbarrow</h3>
+      <p style="color:rgba(255,255,255,0.92); font-size:14px;">A small wooden wheelbarrow loaded with seasonal fruit. Share it. Or don't.</p>
+      <span class="kids-price">$7</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============= SWEETS ============= -->
+<section id="sweets" class="section section-cream-soft">
+  <div class="container">
+    <div class="menu-section-head">
+      <span class="section-num" style="color:var(--color-coral)">04</span>
+      <div>
+        <span class="eyebrow">Sweets</span>
+        <h2 class="h-section" style="margin-top:6px">For after the worksite shuts.</h2>
+      </div>
+      <img src="assets/illust-toolbox.png" alt="" />
+    </div>
+
+    <div class="menu-grid">
+      <article class="menu-item">
+        <div class="menu-name">
+          <h3>Cement-Mixer Choc Brownie</h3>
+          <span class="pill orange">House-made</span>
+        </div>
+        <p>Fudgy double-chocolate brownie with a swirl of salted caramel. Served warm on request.</p>
+        <span class="price-tag">$6.50</span>
+      </article>
+      <article class="menu-item">
+        <div class="menu-name">
+          <h3>Hard Hat Cupcake</h3>
+          <span class="pill yellow">Signature</span>
+        </div>
+        <p>Vanilla cupcake with a yellow buttercream hard hat and a tiny edible star.</p>
+        <span class="price-tag">$5.50</span>
+      </article>
+      <article class="menu-item">
+        <div class="menu-name">
+          <h3>Lamington Slice</h3>
+          <span class="pill teal">Classic</span>
+        </div>
+        <p>Sponge, raspberry jam, chocolate &amp; coconut. The full Aussie experience.</p>
+        <span class="price-tag">$5.00</span>
+      </article>
+      <article class="menu-item">
+        <div class="menu-name">
+          <h3>Banoffee Tart</h3>
+          <span class="pill sage">Veggie</span>
+        </div>
+        <p>Buttery shortcrust, dulce de leche, banana, fresh cream and a dusting of cocoa.</p>
+        <span class="price-tag">$7.50</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============= DRINKS ============= -->
+<section id="drinks" class="section container">
+  <div class="menu-section-head">
+    <span class="section-num">05</span>
+    <div>
+      <span class="eyebrow">Drinks</span>
+      <h2 class="h-section" style="margin-top:6px">From the bench.</h2>
+    </div>
+    <img src="assets/illust-coffee-cup.png" alt="" />
+  </div>
+
+  <div class="drinks-grid">
+    <!-- COFFEE -->
+    <div class="drink-col">
+      <h3 class="drink-col-h">Coffee</h3>
+      <div class="drink-line"><span>Espresso</span><span class="dotty"></span><span class="dp">$4.00</span></div>
+      <div class="drink-line"><span>Long Black</span><span class="dotty"></span><span class="dp">$4.50</span></div>
+      <div class="drink-line"><span>Flat White</span><span class="dotty"></span><span class="dp">$5.00</span></div>
+      <div class="drink-line"><span>Cappuccino</span><span class="dotty"></span><span class="dp">$5.00</span></div>
+      <div class="drink-line"><span>Latte</span><span class="dotty"></span><span class="dp">$5.00</span></div>
+      <div class="drink-line"><span>Mocha</span><span class="dotty"></span><span class="dp">$5.50</span></div>
+      <div class="drink-line"><span>Iced Coffee</span><span class="dotty"></span><span class="dp">$6.50</span></div>
+      <p class="drink-note">Alt milks +$0.80 — oat, almond, soy, lactose-free</p>
+    </div>
+
+    <!-- TEA & OTHER -->
+    <div class="drink-col">
+      <h3 class="drink-col-h">Tea &amp; Other</h3>
+      <div class="drink-line"><span>English Breakfast</span><span class="dotty"></span><span class="dp">$4.50</span></div>
+      <div class="drink-line"><span>Earl Grey</span><span class="dotty"></span><span class="dp">$4.50</span></div>
+      <div class="drink-line"><span>Peppermint</span><span class="dotty"></span><span class="dp">$4.50</span></div>
+      <div class="drink-line"><span>Chai Latte</span><span class="dotty"></span><span class="dp">$5.50</span></div>
+      <div class="drink-line"><span>Hot Chocolate</span><span class="dotty"></span><span class="dp">$5.00</span></div>
+      <div class="drink-line"><span>Matcha Latte</span><span class="dotty"></span><span class="dp">$6.00</span></div>
+    </div>
+
+    <!-- KIDS -->
+    <div class="drink-col">
+      <h3 class="drink-col-h">For Kids</h3>
+      <div class="drink-line"><span>Babycino</span><span class="dotty"></span><span class="dp">Free*</span></div>
+      <div class="drink-line"><span>Strawberry Milkshake</span><span class="dotty"></span><span class="dp">$6.00</span></div>
+      <div class="drink-line"><span>Chocolate Milkshake</span><span class="dotty"></span><span class="dp">$6.00</span></div>
+      <div class="drink-line"><span>Fresh OJ</span><span class="dotty"></span><span class="dp">$5.50</span></div>
+      <div class="drink-line"><span>Apple Juice</span><span class="dotty"></span><span class="dp">$4.50</span></div>
+      <p class="drink-note">*Babycino free with any adult coffee.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CHALKBOARD -->
+<section class="chalk-band" style="min-height: 200px; padding: 48px 24px;">
+  <div class="slogan">
+    <span style="color:#1F8A8A">BUILD.</span>
+    <span style="color:#F4C542">PLAY.</span>
+    <span style="color:#E67E22">EAT.</span>
+    <span style="color:#fff">REPEAT!</span>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="lt-footer">
+  <div class="scallop" aria-hidden="true"></div>
+  <div class="container footer-grid">
+    <div class="brand-col">
+      <img src="assets/logo-final.png" alt="Little Tradies Cafe" />
+      <p class="ftag">Built for play. Brewed for parents. <span class="heart">♡</span></p>
+    </div>
+    <div>
+      <h4>Visit Us</h4>
+      <p><span class="ico">▣</span> 123 Little Builders Lane<br />&nbsp;&nbsp;&nbsp;&nbsp;Playtown VIC 3000</p>
+      <p><span class="ico">◷</span> Open 7 Days<br />&nbsp;&nbsp;&nbsp;&nbsp;7:00am – 5:00pm</p>
+    </div>
+    <div>
+      <h4>Get in Touch</h4>
+      <p><span class="ico">☎</span> (03) 1234 5678</p>
+      <p><span class="ico">✉</span> hello@littletradiescafe.com.au</p>
+      <p><span class="ico">⌖</span> littletradiescafe.com.au</p>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <div class="socials">
+        <a href="#" class="soc f" aria-label="Facebook">f</a>
+        <a href="#" class="soc i" aria-label="Instagram">◉</a>
+        <a href="#" class="soc t" aria-label="TikTok">♪</a>
+      </div>
+      <p class="thanks">Thanks for supporting<br />local &amp; family! <span class="heart">♡</span></p>
+    </div>
+  </div>
+  <div class="copybar">
+    <div class="container copybar-row">
+      <span>© 2026 Little Tradies Cafe · Built for play. Brewed for parents.</span>
+      <span><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms &amp; Conditions</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============= MENU PAGE STYLES ============= -->
+<style>
+  .menu-section-head {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 36px;
+  }
+  .menu-section-head .section-num {
+    font-family: var(--font-display);
+    font-size: 100px;
+    color: var(--color-teal);
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+  .menu-section-head img { width: 100px; height: 100px; object-fit: contain; transform: rotate(-4deg); filter: drop-shadow(0 8px 12px rgba(47,78,104,.18)); }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+  .menu-item {
+    background: #fff;
+    border: 2px solid var(--tint-navy-15);
+    border-radius: 24px;
+    padding: 22px 24px;
+    position: relative;
+    transition: transform 200ms var(--ease-bounce), border-color 200ms;
+  }
+  .menu-item:hover { transform: translateY(-2px); border-color: var(--color-navy); }
+  .menu-name { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 8px; }
+  .menu-name h3 {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    color: var(--color-navy);
+    margin: 0;
+    line-height: 1.15;
+  }
+  .menu-item p { font-size: 14px; line-height: 1.55; margin: 0 0 14px; color: var(--fg-soft); }
+  .price-tag {
+    display: inline-block;
+    font-family: var(--font-hand);
+    font-size: 26px;
+    color: var(--color-orange);
+    font-weight: 700;
+  }
+  @media (max-width: 720px) {
+    .menu-grid { grid-template-columns: 1fr; }
+    .menu-section-head { grid-template-columns: 1fr; text-align: left; }
+    .menu-section-head .section-num { font-size: 64px; }
+    .menu-section-head img { width: 70px; height: 70px; justify-self: end; }
+  }
+
+  /* Kids grid */
+  .kids-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .kids-card { display: flex; flex-direction: column; gap: 8px; padding: 20px; align-items: flex-start; }
+  .kids-card .kids-img {
+    width: 80px; height: 80px; object-fit: contain;
+    background: rgba(255,255,255,0.9); padding: 10px;
+    border-radius: 18px;
+    border: 2px solid var(--color-navy);
+    margin-bottom: 4px;
+  }
+  .kids-card.cream .kids-img { background: #fff; }
+  .kids-price {
+    margin-top: auto;
+    font-family: var(--font-display);
+    font-size: 32px;
+    color: var(--color-navy);
+  }
+  .sticker.orange .kids-price, .sticker.teal .kids-price, .sticker .kids-price[style*="fff"] { color: #fff; }
+  @media (max-width: 880px) { .kids-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 520px) { .kids-grid { grid-template-columns: 1fr; } }
+
+  /* Drinks */
+  .drinks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  .drink-col {
+    background: #fff;
+    border: 2px solid var(--color-navy);
+    border-radius: 24px;
+    padding: 24px 26px;
+    box-shadow: 4px 4px 0 var(--color-navy);
+  }
+  .drink-col-h {
+    font-family: var(--font-display);
+    color: var(--color-teal);
+    font-size: 32px;
+    margin: 0 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 3px dotted var(--tint-navy-15);
+  }
+  .drink-line { display: flex; align-items: baseline; gap: 8px; padding: 8px 0; font-size: 15px; }
+  .drink-line .dotty { flex: 1; border-bottom: 2px dotted var(--tint-navy-15); height: 6px; }
+  .drink-line .dp { font-family: var(--font-hand); color: var(--color-orange); font-weight: 700; font-size: 20px; }
+  .drink-note { margin-top: 12px; font-size: 12px; color: var(--fg-muted); font-style: italic; }
+  @media (max-width: 880px) { .drinks-grid { grid-template-columns: 1fr; } }
+</style>
+
+</body>
+</html>
