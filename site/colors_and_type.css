@@ -1,0 +1,339 @@
+/* ============================================================
+   Little Tradies Café — Design Tokens
+   Colors, type, spacing, radii, shadows, and motion tokens.
+   ============================================================ */
+
+/* --- Webfont loads --- */
+/* Self-hosted brand fonts (uploaded). */
+@font-face {
+  font-family: "Fredoka One";
+  src: url("fonts/FredokaOne-Regular.woff2") format("woff2"),
+       url("fonts/FredokaOne-Regular.woff")  format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lilita One";
+  src: url("fonts/LilitaOne-Regular.woff2") format("woff2"),
+       url("fonts/LilitaOne-Regular.woff")  format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("fonts/BebasNeue-Regular.woff2") format("woff2"),
+       url("fonts/BebasNeue-Regular.woff")  format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("fonts/Nunito-600.woff2") format("woff2"),
+       url("fonts/Nunito-600.woff")  format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("fonts/Nunito-700.woff2") format("woff2"),
+       url("fonts/Nunito-700.woff")  format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("fonts/Nunito-800.woff2") format("woff2"),
+       url("fonts/Nunito-800.woff")  format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Script + hand accents — not in the uploaded brand pack; still served via Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Patrick+Hand&display=swap');
+
+:root {
+  /* =====================================================
+     COLORS — Brand
+     ===================================================== */
+
+  /* Primary brand colors */
+  --color-teal:        #1F8A8A;  /* Primary — wordmark "Tradies", buttons, accents */
+  --color-yellow:      #F4C542;  /* Highlight — hard hat, hazard stripes, stars */
+  --color-mustard:     #F4C542;  /* Alias for --color-yellow (legacy naming) */
+  --color-orange:      #E67E22;  /* Energy / CTA — "Café" wordmark, primary buttons */
+  --color-navy:        #2F4E68;  /* Strong headings, dark surfaces, text on cream */
+
+  /* Neutrals */
+  --color-charcoal:    #3E4349;  /* Body text, chalkboard surfaces */
+  --color-cream:       #F7F3EA;  /* Warm café background — DEFAULT app bg */
+  --color-cream-soft:  #FBF8F1;  /* Lighter cream for nested surfaces */
+  --color-bone:        #F7F3EA;  /* Soft stone neutral */
+  --color-white:       #FFFFFF;
+
+  /* Supporting palette */
+  --color-sage:        #7D8B6A;  /* Soft family-friendly accent (Family chip) */
+  --color-coral:       #E87A5B;  /* Secondary warm accent */
+  --color-warm-grey:   #7A7A73;  /* Muted text */
+  --color-brown:       #8B5E34;  /* Wood / kraft accent (menu border) */
+
+  /* Tints (transparent overlays) */
+  --tint-teal-12:      rgba(31,138,138,0.12);
+  --tint-yellow-30:    rgba(244,197,66,0.30);
+  --tint-mustard-30:   rgba(244,197,66,0.30); /* alias */
+  --tint-orange-12:    rgba(230,126,34,0.12);
+  --tint-navy-10:      rgba(47,78,104,0.10);
+  --tint-navy-15:      rgba(47,78,104,0.15);
+  --tint-charcoal-65:  rgba(62,67,73,0.65);
+  --tint-charcoal-85:  rgba(62,67,73,0.85);
+
+  /* =====================================================
+     SEMANTIC TOKENS
+     ===================================================== */
+
+  /* --- Confirmed semantic color roles --- */
+  --color-primary:     var(--color-teal);     /* #1F8A8A — main brand, primary buttons, headings */
+  --color-secondary:   var(--color-yellow);   /* #F4C542 — borders, highlights, frames, secondary UI */
+  --color-accent:      var(--color-orange);   /* #E67E22 — high-energy CTAs, highlights, warmth */
+  --color-text-dark:   var(--color-charcoal); /* #3E4349 — all body text, outlines, borders */
+  --color-success:     var(--color-sage);     /* #7D8B6A — success states, confirmation messages */
+  --color-info:        var(--color-navy);     /* #2F4E68 — informational messages, links, depth */
+  --color-danger:      var(--color-coral);    /* #E87A5B — error states, warnings, alerts */
+
+  /* --- Surfaces & foreground (composed from the roles above) --- */
+  --bg-app:            var(--color-cream);
+  --bg-surface:        var(--color-white);
+  --bg-surface-warm:   var(--color-cream-soft);
+  --bg-inverse:        var(--color-info);
+  --bg-chalk:          var(--color-text-dark);
+
+  --fg-default:        var(--color-text-dark);
+  --fg-strong:         var(--color-info);
+  --fg-muted:          var(--tint-charcoal-65);
+  --fg-soft:           var(--tint-charcoal-85);
+  --fg-on-dark:        var(--color-white);
+  --fg-on-cream:       var(--color-info);
+
+  --accent-primary:    var(--color-primary);
+  --accent-energy:     var(--color-accent);
+  --accent-highlight:  var(--color-secondary);
+  --accent-soft:       var(--color-sage);
+
+  --border-default:    var(--tint-navy-15);
+  --border-strong:     var(--color-navy);
+  --border-card:       4px solid var(--color-navy);
+
+  /* =====================================================
+     TYPOGRAPHY — Font stacks
+     ===================================================== */
+
+  /* Display — hero wordmark + huge slogans (--text-5xl, --text-4xl).
+     Fredoka One is the chunky rounded picture-book display face. */
+  --font-display:      "Fredoka One", system-ui, sans-serif;
+
+  /* Heading — section and card headings (--text-3xl, --text-2xl, --text-xl).
+     Lilita One is bold, slightly condensed, picture-book companion. */
+  --font-heading:      "Lilita One", "Fredoka One", system-ui, sans-serif;
+
+  /* Body — lead, body, secondary, fine print (--text-lg through --text-xs). */
+  --font-body:         "Nunito", system-ui, -apple-system, sans-serif;
+
+  /* ALL-CAPS — labels, badges, navigation, eyebrows.
+     Bebas Neue sits OUTSIDE the body scale; used only when text is in caps. */
+  --font-label:        "Bebas Neue", "Nunito", Impact, sans-serif;
+
+  /* Handwritten accent — taglines ("Brewed for parents."), doodled callouts. */
+  --font-script:       "Caveat", "Patrick Hand", "Comic Sans MS", cursive;
+
+  /* Hand-printed — menu prices, small doodles. */
+  --font-hand:         "Patrick Hand", "Caveat", "Comic Sans MS", cursive;
+
+  /* Legacy aliases — kept for back-compat in existing UI kits */
+  --font-poster:       var(--font-label);  /* old poster slot → caps label face */
+
+  /* Mono (rarely used — hex codes, tokens) */
+  --font-mono:         ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* =====================================================
+     TYPE SCALE — Confirmed t-shirt sizes
+     ===================================================== */
+  --text-xs:    12px;  /* Captions, badges, fine print */
+  --text-sm:    14px;  /* Secondary text, card descriptions */
+  --text-base:  16px;  /* Body text — main reading size */
+  --text-lg:    20px;  /* Intro paragraph / Lead */
+  --text-xl:    24px;  /* Sub-heading / Label */
+  --text-2xl:   32px;  /* Card Heading */
+  --text-3xl:   40px;  /* Section Heading */
+  --text-4xl:   56px;  /* Little Tradies wordmark */
+  --text-5xl:   72px;  /* Display Aa */
+
+  /* Legacy pixel tokens kept for compatibility (mirror to --text-*) */
+  --fs-12: var(--text-xs);
+  --fs-14: var(--text-sm);
+  --fs-16: var(--text-base);
+  --fs-18: 18px;
+  --fs-20: var(--text-lg);
+  --fs-24: var(--text-xl);
+  --fs-32: var(--text-2xl);
+  --fs-40: var(--text-3xl);
+  --fs-48: 48px;
+  --fs-64: 64px;
+  --fs-80: 80px;
+  --fs-96: 96px;
+
+  --lh-tight:  1.0;
+  --lh-snug:   1.1;
+  --lh-normal: 1.5;
+  --lh-loose:  1.7;
+
+  --ls-tight:  -0.02em;
+  --ls-normal: 0;
+  --ls-wide:   0.08em;
+  --ls-x-wide: 0.18em;
+
+  /* =====================================================
+     SPACING — 4px base
+     ===================================================== */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* =====================================================
+     RADII — Generous, friendly rounding
+     ===================================================== */
+  --radius-xs:    6px;
+  --radius-sm:    12px;
+  --radius-md:    18px;   /* default for chips/buttons */
+  --radius-lg:    24px;
+  --radius-xl:    32px;   /* default for cards */
+  --radius-2xl:   40px;
+  --radius-pill:  9999px; /* CTAs are usually pill-shaped */
+
+  /* =====================================================
+     SHADOWS — Soft, lifted "sticker" feel
+     ===================================================== */
+  --shadow-xs:   0 1px 2px rgba(47,78,104,0.06);
+  --shadow-sm:   0 2px 6px rgba(47,78,104,0.08);
+  --shadow-md:   0 6px 14px rgba(47,78,104,0.10), 0 2px 4px rgba(47,78,104,0.06);
+  --shadow-lg:   0 14px 30px rgba(47,78,104,0.14), 0 4px 8px rgba(47,78,104,0.06);
+  --shadow-xl:   0 24px 50px rgba(47,78,104,0.18), 0 6px 12px rgba(47,78,104,0.08);
+  --shadow-inner-soft: inset 0 2px 4px rgba(47,78,104,0.08);
+
+  /* "Sticker" hard-edge offset shadow — gives cards their playful pop */
+  --shadow-sticker: 4px 4px 0 var(--color-navy);
+  --shadow-sticker-lg: 6px 6px 0 var(--color-navy);
+
+  /* =====================================================
+     MOTION
+     ===================================================== */
+  --ease-bounce:  cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out:     cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:  cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast:     150ms;
+  --dur-normal:   250ms;
+  --dur-slow:     400ms;
+
+  /* =====================================================
+     PATTERNS — reusable backgrounds
+     ===================================================== */
+  --hazard-stripe: repeating-linear-gradient(
+    135deg,
+    var(--color-mustard) 0 18px,
+    var(--color-navy) 18px 36px
+  );
+  --hazard-stripe-charcoal: repeating-linear-gradient(
+    135deg,
+    var(--color-mustard) 0 18px,
+    var(--color-charcoal) 18px 36px
+  );
+}
+
+/* ============================================================
+   ELEMENT DEFAULTS — semantic HTML maps to brand type system
+   ============================================================ */
+html {
+  font-family: var(--font-body);
+  color: var(--fg-default);
+  background: var(--bg-app);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings step down through the type scale.
+   h1 = display (Fredoka One); h2/h3/h4 = heading (Lilita One). */
+h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--text-4xl);
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  color: var(--color-info);
+  margin: 0;
+}
+h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  color: var(--color-info);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+h2 { font-size: var(--text-3xl); }
+h3 { font-size: var(--text-2xl); }
+h4 { font-size: var(--text-xl); }
+
+p {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--fg-soft);
+  margin: 0;
+}
+
+small, .text-small { font-size: var(--text-sm); }
+
+/* Eyebrow / kicker label — ALL CAPS Bebas Neue (the label face) */
+.eyebrow, .label-caps {
+  font-family: var(--font-label);
+  font-weight: 400;
+  font-size: var(--text-sm);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+/* Hand-written accent (taglines under headlines) */
+.script {
+  font-family: var(--font-script);
+  font-weight: 700;
+  font-size: var(--text-2xl);
+  color: var(--color-info);
+  line-height: 1.2;
+}
+
+/* Poster / chalkboard headline (legacy class — caps label face) */
+.poster {
+  font-family: var(--font-label);
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  line-height: 1.0;
+}
+
+code, kbd, .mono {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+}

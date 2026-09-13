@@ -16,11 +16,11 @@
 <div class="container nav-wrap">
   <nav class="nav">
     <a class="nav-brand" href="index.html" aria-label="Little Tradies Cafe — home">
-      <img src="assets/logo-final.png" alt="Little Tradies Cafe" />
+      <img src="assets/logo-main.png" alt="Little Tradies Cafe" />
     </a>
     <div class="nav-links" id="navLinks">
       <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
+      <a href="About.html">About</a>
       <a href="menu.html">Menu</a>
       <a href="play.html">Play Zone</a>
       <a href="toys.html">Toys</a>
@@ -56,8 +56,8 @@
         the hands-on world of construction. Less screen time. More build time.
       </p>
       <div class="hero-cta row">
-        <a class="btn primary lg" href="menu.html" id="heroCtaPrimary">View Adult Menu <span class="star">★</span></a>
-        <a class="btn outline lg" href="menu.html" id="heroCtaSecondary">View Kids Menu →</a>
+        <a class="btn primary lg" href="menu.html" id="heroCtaPrimary">Food & Kids Menu <span class="star">★</span></a>
+        <a class="btn outline lg" href="menu.html" id="heroCtaSecondary">Drinks Menu →</a>
       </div>
     </div>
 
@@ -67,14 +67,14 @@
         <span style="opacity:.9">♡</span>
       </div>
       <div class="hero-cluster">
-        <img class="art-grader" src="assets/illust-grader.png" alt="Cartoon road grader" />
-        <img class="art-truck" src="assets/illust-truck.png" alt="Cartoon dump truck" />
-        <img class="art-excavator" src="assets/illust-excavator.png" alt="Cartoon excavator" />
-        <img class="art-cup"   src="assets/illust-coffee-cup.png" alt="Coffee cup" />
-        <img class="art-hat"   src="assets/illust-helmet.png" alt="Hard hat" />
-        <img class="art-loader" src="assets/illust-loader.png" alt="Cartoon loader" />
-        <img class="art-steamroller" src="assets/illust-steamroller.png" alt="Cartoon steamroller" />
-        <img class="art-box"   src="assets/illust-toolbox.png" alt="Toolbox" />
+        <img class="art-grader" src="assets/illust-grader.png" alt="Cartoon road grader" style="left: 163px; top: 306px; position: absolute" />
+        <img class="art-truck" src="assets/illust-truck.png" alt="Cartoon dump truck" style="left: 293px; top: 189px; position: absolute" />
+        <img class="art-excavator" src="assets/illust-excavator.png" alt="Cartoon excavator" style="left: 377px; top: 319px; position: absolute" />
+        <img class="art-cup"   src="assets/illust-coffee-cup.png" alt="Coffee cup" style="left: 229px; top: 424px; position: absolute" />
+        <img class="art-hat"   src="assets/illust-helmet.png" alt="Hard hat" style="left: 155px; top: 156px; position: absolute" />
+        <img class="art-loader" src="assets/illust-loader.png" alt="Cartoon loader" style="left: 219px; top: 551px; position: absolute" />
+        <img class="art-steamroller" src="assets/illust-steamroller.png" alt="Cartoon steamroller" style="left: 349px; top: 463px; position: absolute" />
+        <img class="art-box"   src="assets/illust-toolbox.png" alt="Toolbox" style="left: 457px; top: 581px; position: absolute" />
       </div>
     </div>
   </div>
@@ -157,12 +157,7 @@
 <section id="welcome" class="section container">
   <div class="welcome-grid">
     <div class="welcome-photo fade-up">
-      <div class="photo-frame">
-        <div class="photo-inner">
-          <div class="photo-overlay"></div>
-          <div class="photo-tag">Good Coffee.<br/>Great Play.<br/>Happy Families.</div>
-        </div>
-      </div>
+      <img src="assets/cafe-interior.png" alt="Cafe interior with children in sandpit" style="width: 100%; height: auto; border-radius: 16px;" />
     </div>
 
     <div class="welcome-copy">
@@ -172,11 +167,15 @@
         <span style="color:var(--color-navy)">Tradies</span>
         <span style="color:var(--color-orange)">Cafe</span>
       </h2>
-      <p class="lead">
-        We're a construction-themed family cafe where little builders can dig,
-        climb and imagine, while parents relax with great coffee and feel-good
-        food. Every visit is designed for smiles, sticky fingers and strong coffee.
-      </p>
+      <div class="lead">
+        <div>
+          <p>
+            We're a construction-themed family café where little builders—girls and boys alike - can dig in the sandpit, build on the LEGO wall and let their imaginations run wild, while parents and caregivers relax with great coffee and feel-good food.
+            <br />
+            Every visit is designed for smiles, sticky fingers and strong coffee.
+          </p>
+        </div>
+      </div>
 
       <div class="values">
         <div class="value">
@@ -210,7 +209,7 @@ Welcoming</div>
       </div>
 
       <div class="row" style="margin-top:28px">
-        <a class="btn teal" href="about.html">Our Story →</a>
+        <a class="btn teal" href="About.html">Our Story →</a>
         <a class="btn outline" href="play.html">Play Zone Info</a>
       </div>
     </div>
@@ -218,35 +217,6 @@ Welcoming</div>
 
   <style>
     .welcome-grid { display: grid; gap: 40px; grid-template-columns: 1fr 1.05fr; align-items: center; }
-    .photo-frame {
-      border-radius: 32px; overflow: hidden;
-      background: #6E5238; border: 3px solid var(--color-navy);
-      box-shadow: var(--shadow-lg); aspect-ratio: 4 / 3.2; position: relative;
-    }
-    .photo-inner {
-      position: absolute; inset: 0;
-      background:
-        radial-gradient(circle at 30% 35%, rgba(242,179,44,0.25), transparent 55%),
-        radial-gradient(circle at 70% 70%, rgba(31,141,138,0.22), transparent 55%),
-        linear-gradient(160deg, #b08454 0%, #6E5238 60%, #3E2E1F 100%);
-    }
-    .photo-overlay {
-      position: absolute; inset: 0;
-      background:
-        linear-gradient(transparent 60%, rgba(0,0,0,0.25)),
-        repeating-linear-gradient(2deg, rgba(255,255,255,0.04) 0 2px, transparent 2px 6px);
-    }
-    .photo-tag {
-      position: absolute; right: 12%; top: 12%;
-      background: rgba(0,0,0,0.6); color: #F7F3EA;
-      padding: 18px 20px; border-radius: 18px;
-      font-family: var(--font-script); font-weight: 700;
-      font-size: 22px; line-height: 1.15;
-      transform: rotate(-3deg); z-index: 2;
-    }
-    .scene-truck  { position: absolute; left: 6%;  bottom: 6%;  width: 40%; transform: rotate(-3deg); filter: drop-shadow(0 6px 14px rgba(0,0,0,0.4)); }
-    .scene-loader { position: absolute; right: 4%; bottom: 22%; width: 32%; transform: rotate(3deg); filter: drop-shadow(0 6px 14px rgba(0,0,0,0.4)); }
-    .scene-hat    { position: absolute; left: 44%; bottom: 8%;  width: 22%; transform: rotate(-6deg); filter: drop-shadow(0 6px 14px rgba(0,0,0,0.4)); }
     .hello { font-family: var(--font-body); font-weight: 800; font-size: 22px; color: var(--color-navy); margin: 0 0 6px; }
     .title { font-family: var(--font-display); font-size: clamp(44px, 5.5vw, 76px); line-height: 1.0; letter-spacing: -0.02em; margin: 0 0 22px; }
     .lead { color: var(--fg-soft); margin: 0 0 28px; font-size: 17px; line-height: 1.65; }
@@ -321,139 +291,7 @@ Welcoming</div>
   </style>
 </section>
 
-<!-- ============================ MENU PEEK ============================ -->
-<section class="section container">
-  <div class="menupeek-grid">
-    <div>
-      <span class="eyebrow">Today on the worksite menu</span>
-      <h2 class="h-section" style="margin:14px 0 18px">
-        Built big.<br />
-        <span style="color:var(--color-orange)">Made fresh.</span>
-      </h2>
-      <p style="font-size:17px; max-width:520px; line-height:1.6">
-        A short, honest menu that swings from <em>babycino &amp; banana bread</em> to
-        <em>builder's brekkie roll</em>. Order at the bench. Sticky fingers welcome.
-      </p>
-      <div class="menupeek-list">
-        <div class="menupeek-row">
-          <span class="pill teal">Brekkie</span>
-          <strong>Builder's Brekkie Roll</strong>
-          <span class="dots"></span>
-          <span class="price">$12.50</span>
-        </div>
-        <div class="menupeek-row">
-          <span class="pill orange">Mains</span>
-          <strong>Crinkle Cut Chips &amp; Aioli</strong>
-          <span class="dots"></span>
-          <span class="price">$9.00</span>
-        </div>
-        <div class="menupeek-row">
-          <span class="pill yellow">Kids</span>
-          <strong>Mini Pizza — Margherita</strong>
-          <span class="dots"></span>
-          <span class="price">$10.00</span>
-        </div>
-        <div class="menupeek-row">
-          <span class="pill sage">Sweet</span>
-          <strong>Cement-Mixer Choc Brownie</strong>
-          <span class="dots"></span>
-          <span class="price">$6.50</span>
-        </div>
-      </div>
-      <div class="row" style="margin-top:28px">
-        <a class="btn primary" href="menu.html">See the full menu →</a>
-      </div>
-    </div>
 
-    <aside class="kids-menu sticker flat">
-      <div class="board">
-        <div class="board-header">
-          <span class="spark left">✦</span>
-          <span class="title">Kids Menu</span>
-          <span class="spark right">✦</span>
-        </div>
-        <div class="rows">
-          <div class="row-item">
-            <div class="row-ico"><img src="assets/illust-loader.png" alt="" /></div>
-            <div class="row-name">Nuggets</div>
-            <div class="row-line"></div>
-            <div class="row-star" style="color:var(--color-yellow)">★</div>
-          </div>
-          <div class="row-item">
-            <div class="row-ico"><img src="assets/illust-helmet.png" alt="" /></div>
-            <div class="row-name">Brekkie Roll</div>
-            <div class="row-line"></div>
-            <div class="row-star" style="color:var(--color-teal)">★</div>
-          </div>
-          <div class="row-item">
-            <div class="row-ico"><img src="assets/illust-toolbox.png" alt="" /></div>
-            <div class="row-name">Snack Box</div>
-            <div class="row-line"></div>
-            <div class="row-star" style="color:var(--color-orange)">★</div>
-          </div>
-          <div class="row-item">
-            <div class="row-ico"><img src="assets/illust-coffee-cup.png" alt="" /></div>
-            <div class="row-name">Babycino</div>
-            <div class="row-line"></div>
-            <div class="row-star" style="color:transparent">★</div>
-          </div>
-        </div>
-        <div class="board-foot">
-          <div class="heart">♡</div>
-        </div>
-      </div>
-    </aside>
-  </div>
-
-  <style>
-    .menupeek-grid { display: grid; grid-template-columns: 1.2fr 360px; gap: 40px; align-items: center; }
-    .menupeek-list { margin-top: 32px; display: flex; flex-direction: column; gap: 10px; }
-    .menupeek-row {
-      display: flex; align-items: center; gap: 14px;
-      padding: 14px 16px; background: #fff;
-      border: 2px solid var(--tint-navy-15); border-radius: 18px;
-      transition: transform 200ms var(--ease-bounce), border-color 200ms;
-    }
-    .menupeek-row:hover { transform: translateX(4px); border-color: var(--color-navy); }
-    .menupeek-row strong { font-size: 16px; color: var(--color-navy); }
-    .menupeek-row .dots { flex: 1; border-bottom: 2px dotted var(--tint-navy-15); height: 6px; }
-    .menupeek-row .price { font-family: var(--font-hand); color: var(--color-orange); font-size: 22px; font-weight: 700; }
-    .kids-menu { border: 3px solid var(--color-teal); border-radius: 28px; padding: 18px; max-width: 360px; margin: 0 auto; }
-    .kids-menu .board { background: #fff; border-radius: 18px; padding: 14px 16px 6px; }
-    .board-header {
-      display: flex; align-items: center; justify-content: center; gap: 12px;
-      background: var(--color-teal); color: #fff;
-      padding: 10px 22px; border-radius: 14px;
-      margin: -32px auto 18px; width: fit-content;
-      box-shadow: var(--shadow-sm);
-    }
-    .board-header .title { font-family: var(--font-display); font-size: 28px; }
-    .board-header .spark { color: var(--color-yellow); font-size: 14px; }
-    .rows { display: flex; flex-direction: column; gap: 14px; }
-    .row-item { display: grid; grid-template-columns: 48px 1fr auto auto; align-items: center; gap: 12px; }
-    .row-ico { width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; }
-    .row-ico img { width: 44px; height: 44px; object-fit: contain; }
-    .row-name { font-family: var(--font-display); font-size: 22px; color: var(--color-navy); }
-    .row-line { height: 2px; background-image: linear-gradient(to right, var(--tint-navy-15) 50%, transparent 50%); background-size: 6px 2px; width: 30px; }
-    .row-star { font-size: 20px; }
-    .board-foot {
-      margin-top: 16px;
-      background: repeating-linear-gradient(135deg, #1F8A8A 0 14px, #fff 14px 28px);
-      height: 14px; border-radius: 10px; position: relative;
-    }
-    .heart {
-      position: absolute; left: 50%; transform: translateX(-50%);
-      bottom: -10px; background: #fff; color: var(--color-teal);
-      width: 22px; height: 22px;
-      display: flex; align-items: center; justify-content: center;
-      border-radius: 99px; font-size: 14px;
-    }
-    @media (max-width: 920px) {
-      .menupeek-grid { grid-template-columns: 1fr; }
-      .kids-menu { max-width: 360px; margin: 0 auto; }
-    }
-  </style>
-</section>
 
 <!-- ============================ CHALK BAND ============================ -->
 <section class="chalk-band">
@@ -499,7 +337,7 @@ Welcoming</div>
             as role models in a screen-saturated world. Come raise makers, not watchers.
           </p>
           <div class="row" style="margin-top:24px">
-            <a class="btn primary lg" href="about.html">Read our story →</a>
+            <a class="btn primary lg" href="About.html">Read our story →</a>
             <a class="btn outline lg" style="background:transparent; color:#fff; border-color:#fff;" href="community.html">Meet the community</a>
           </div>
         </div>
@@ -524,26 +362,26 @@ Welcoming</div>
   <div class="scallop" aria-hidden="true"></div>
   <div class="container footer-grid">
     <div class="brand-col">
-      <img src="assets/logo-final.png" alt="Little Tradies Cafe" />
+      <img src="assets/logo-main.png" alt="Little Tradies Cafe" />
       <p class="ftag">Built for play. Brewed for parents. <span class="heart">♡</span></p>
     </div>
     <div>
       <h4>Visit Us</h4>
-      <p><span class="ico">▣</span> 123 Little Builders Lane<br />&nbsp;&nbsp;&nbsp;&nbsp;Playtown VIC 3000</p>
-      <p><span class="ico">◷</span> Open 7 Days<br />&nbsp;&nbsp;&nbsp;&nbsp;7:00am – 5:00pm</p>
+      <p><span class="ico">▣</span> U6/180 Forsyth St, Wagga Wagga NSW 2650</p>
+      <p><span class="ico">◷</span> Open 7 Days<br />Mon-Fri 6am-2pm<br />Sat-Sun 8am-3pm</p>
     </div>
     <div>
       <h4>Get in Touch</h4>
-      <p><span class="ico">☎</span> (03) 1234 5678</p>
-      <p><span class="ico">✉</span> hello@littletradiescafe.com.au</p>
-      <p><span class="ico">⌖</span> littletradiescafe.com.au</p>
+      <p><span class="ico">☎</span> (02) 6921 3486</p>
+      <p><span class="ico">✉</span> info@littletradiescafe.com.au</p>
+      <p><span class="ico">⌖</span> www.littletradiescafe.com.au</p>
     </div>
     <div>
       <h4>Follow Us</h4>
       <div class="socials">
-        <a href="#" class="soc f" aria-label="Facebook">f</a>
-        <a href="#" class="soc i" aria-label="Instagram">◉</a>
-        <a href="#" class="soc t" aria-label="TikTok">♪</a>
+        <a href="https://www.facebook.com/profile.php?id=61591291210645" class="soc f" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/littletradiescafe/?hl=en" class="soc i" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="https://www.tiktok.com/@littletradiescafe" class="soc t" aria-label="TikTok"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg></a>
       </div>
       <p class="thanks">Thanks for supporting<br />local &amp; family! <span class="heart">♡</span></p>
     </div>
@@ -574,8 +412,8 @@ const HERO_TWEAKS = /*EDITMODE-BEGIN*/{
   "cup_x":         16, "cup_y":         84, "cup_rot":         -8, "cup_w":         22, "cup_z":         6,
   "hat_x":         48, "hat_y":         82, "hat_rot":          7, "hat_w":         26, "hat_z":         6,
   "box_x":         80, "box_y":         74, "box_rot":         -5, "box_w":         26, "box_z":         5,
-  "ctaPrimary":   "View Adult Menu",
-  "ctaSecondary": "View Kids Menu →"
+  "ctaPrimary":   "Food & Kids Menu",
+  "ctaSecondary": "Drinks Menu →"
 }/*EDITMODE-END*/;
 
 const ITEMS = [
