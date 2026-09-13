@@ -1,391 +1,204 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Toys — Little Tradies Cafe</title>
-<meta name="description" content="Build kits, dress-ups and wooden toys — pick one up at the counter or take a play-zone favourite home." />
-<link rel="stylesheet" href="site.css" />
-<link rel="icon" type="image/png" href="assets/illust-helmet.png" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Visit Little Tradies Cafe — Hours, directions, booking, and contact information." />
+  <title>Visit Us — Little Tradies Cafe</title>
+  <link rel="canonical" href="https://littletradiescafe.com.au/visit" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="assets/illust-helmet.png" />
 </head>
-<body data-screen-label="07 Toys">
+<body data-page="visit">
 
-<!-- NAV -->
 <div class="container nav-wrap">
   <nav class="nav">
     <a class="nav-brand" href="index.html" aria-label="Little Tradies Cafe — home">
-      <img src="assets/logo-final.png" alt="Little Tradies Cafe" />
+      <img src="assets/logo-final.png" alt="Little Tradies Cafe" loading="eager" />
     </a>
     <div class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="menu.html">Menu</a>
       <a href="play.html">Play Zone</a>
-      <a href="toys.html" class="active">Toys</a>
+      <a href="toys.html">Toys</a>
       <a href="community.html">Local Tradie</a>
-      <a href="visit.html">Visit Us</a>
+      <a href="visit.html" class="active">Visit Us</a>
     </div>
-    <a class="btn primary nav-cta" href="#">Daily Deal <span class="star">★</span></a>
-    <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
+    <a class="btn primary nav-cta" href="index.html#daily-deal">Daily Deal <span class="star">★</span></a>
+    <button class="nav-toggle" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
   </nav>
 </div>
 
-<!-- HERO -->
 <section class="page-hero container">
-  <div class="blob" style="background:#F4C542; top:-100px; right:-80px;"></div>
-  <div class="blob" style="background:#E67E22; bottom:-100px; left:-80px;"></div>
+  <div class="blob" style="background:#7D8B6A; top:-80px; right:-80px;"></div>
+  <div class="blob" style="background:#E87A5B; bottom:-100px; left:-80px;"></div>
   <div class="page-hero-grid">
     <div class="fade-up">
-      <span class="eyebrow">Take home a little site</span>
+      <span class="eyebrow">Get Here</span>
       <h1 class="h-display" style="margin-top:14px">
-        Toys built for<br />
-        <span style="color:var(--color-orange)">tiny tradies.</span>
+        Drop by the site.<br />
+        <span style="color:var(--color-teal)">We're always open.</span>
       </h1>
       <p class="lead">
-        Hand-picked from local makers — wooden trucks, soft hammers, hi-vis
-        dress-ups and build-it-yourself kits. Browse at the counter, or
-        order ahead and we'll have it ready with your coffee.
+        U6/180 Forsyth Street, Wagga Wagga NSW 2650. Seven days a week,
+        6am to 2pm. Kids play free, coffee always on.
       </p>
-      <div class="row" style="margin-top:24px">
-        <a class="btn primary lg" href="#shop">Browse the shop →</a>
-        <a class="btn outline lg" href="#kits">Build-It kits</a>
-      </div>
     </div>
     <div class="page-hero-art fade-up d2">
-      <img src="assets/illust-toolbox.png" alt="Toolbox of toys" />
+      <img src="assets/illust-grader.png" alt="Illustration of grader" loading="lazy" />
     </div>
   </div>
 </section>
 
 <div class="hazard"></div>
 
-<!-- CATEGORY CHIPS -->
-<section class="section tight container">
-  <div class="chips">
-    <a class="chip play" href="#wooden" style="text-decoration:none">
-      <span class="chip-ico"><img src="assets/illust-truck.png" alt="" /></span>
-      <span>Wooden</span>
-    </a>
-    <a class="chip coffee" href="#dressup" style="text-decoration:none">
-      <span class="chip-ico"><img src="assets/illust-helmet.png" alt="" /></span>
-      <span>Dress-up</span>
-    </a>
-    <a class="chip food" href="#kits" style="text-decoration:none">
-      <span class="chip-ico"><img src="assets/illust-toolbox.png" alt="" /></span>
-      <span>Build kits</span>
-    </a>
-    <a class="chip family" href="#books" style="text-decoration:none">
-      <span class="chip-ico"><img src="assets/illust-loader.png" alt="" /></span>
-      <span>Books</span>
-    </a>
-  </div>
-</section>
-
-<!-- SHOP GRID -->
-<section id="shop" class="section container">
-  <div class="menu-section-head">
-    <span class="section-num">01</span>
+<section class="section container">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; max-width: 1000px; margin: 0 auto;">
     <div>
-      <span class="eyebrow">Wooden Fleet</span>
-      <h2 class="h-section" style="margin-top:6px" id="wooden">From local makers.</h2>
-    </div>
-    <img src="assets/illust-truck.png" alt="" />
-  </div>
-
-  <div class="toy-grid">
-    <article class="toy-card sticker">
-      <div class="toy-photo" style="background: var(--color-cream-soft);">
-        <img src="assets/illust-truck.png" alt="" />
-        <span class="pill yellow toy-tag">Bestseller</span>
-      </div>
-      <div class="toy-body">
-        <h3 class="h-card">Mini Dump Truck</h3>
-        <p>Solid pine, hand-painted. Tray tips. Made by Old Pine Toys, Ballarat.</p>
-        <div class="toy-foot">
-          <span class="toy-price">$48</span>
-          <span class="age-pill">Age 2+</span>
-        </div>
-      </div>
-    </article>
-
-    <article class="toy-card sticker">
-      <div class="toy-photo" style="background: rgba(31,138,138,.14);">
-        <img src="assets/illust-grader.png" alt="" />
-      </div>
-      <div class="toy-body">
-        <h3 class="h-card">Wooden Grader</h3>
-        <p>Spinning blade, sturdy wheels, screen-printed cab number.</p>
-        <div class="toy-foot">
-          <span class="toy-price">$54</span>
-          <span class="age-pill">Age 3+</span>
-        </div>
-      </div>
-    </article>
-
-    <article class="toy-card sticker">
-      <div class="toy-photo" style="background: rgba(230,126,34,.14);">
-        <img src="assets/illust-loader.png" alt="" />
-        <span class="pill orange toy-tag">New</span>
-      </div>
-      <div class="toy-body">
-        <h3 class="h-card">Front-End Loader</h3>
-        <p>Working scoop, magnetic bucket clasp, drop-cloth packaging.</p>
-        <div class="toy-foot">
-          <span class="toy-price">$58</span>
-          <span class="age-pill">Age 3+</span>
-        </div>
-      </div>
-    </article>
-
-    <article class="toy-card sticker">
-      <div class="toy-photo" style="background: rgba(125,139,106,.18);">
-        <img src="assets/illust-steamroller.png" alt="" />
-      </div>
-      <div class="toy-body">
-        <h3 class="h-card">Steamroller</h3>
-        <p>Heavy roller, smoothed maple, satisfying to push down a hallway.</p>
-        <div class="toy-foot">
-          <span class="toy-price">$44</span>
-          <span class="age-pill">Age 2+</span>
-        </div>
-      </div>
-    </article>
-
-    <article class="toy-card sticker">
-      <div class="toy-photo" style="background: rgba(232,122,91,.18);">
-        <img src="assets/illust-excavator.png" alt="" />
-      </div>
-      <div class="toy-body">
-        <h3 class="h-card">Mini Excavator</h3>
-        <p>Posable arm, bucket scoops real (small) loads. Cabin opens.</p>
-        <div class="toy-foot">
-          <span class="toy-price">$62</span>
-          <span class="age-pill">Age 4+</span>
-        </div>
-      </div>
-    </article>
-
-    <article class="toy-card sticker">
-      <div class="toy-photo" style="background: rgba(244,197,66,.24);">
-        <img src="assets/illust-toolbox.png" alt="" />
-        <span class="pill teal toy-tag">Gift idea</span>
-      </div>
-      <div class="toy-body">
-        <h3 class="h-card">Tradie Toolbox</h3>
-        <p>Wooden tools — hammer, spanner, saw, screwdriver, bolts. In a real toolbox.</p>
-        <div class="toy-foot">
-          <span class="toy-price">$72</span>
-          <span class="age-pill">Age 3+</span>
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-
-<!-- DRESS UP -->
-<section id="dressup" class="section section-cream-soft">
-  <div class="container">
-    <div class="menu-section-head">
-      <span class="section-num" style="color:var(--color-orange)">02</span>
-      <div>
-        <span class="eyebrow">Dress-up Depot</span>
-        <h2 class="h-section" style="margin-top:6px">Suit up, little tradie.</h2>
-      </div>
-      <img src="assets/illust-helmet.png" alt="" />
-    </div>
-
-    <div class="dressup-grid">
-      <div class="dress-card sticker yellow">
-        <img src="assets/illust-helmet.png" alt="" class="kids-img" />
-        <h3 class="h-card" style="color:var(--color-navy)">Hard Hat</h3>
-        <p style="color:var(--color-navy); font-size:14px;">Real-feel ABS plastic, adjustable strap, Tradies sticker.</p>
-        <span class="kids-price" style="color:var(--color-navy)">$18</span>
-      </div>
-      <div class="dress-card sticker orange">
-        <img src="assets/illust-toolbox.png" alt="" class="kids-img" />
-        <h3 class="h-card" style="color:#fff">Tool Belt</h3>
-        <p style="color:rgba(255,255,255,0.92); font-size:14px;">Canvas belt, 4 pockets, soft hammer and spanner included.</p>
-        <span class="kids-price">$28</span>
-      </div>
-      <div class="dress-card sticker teal">
-        <img src="assets/illust-coffee-cup.png" alt="" class="kids-img" />
-        <h3 class="h-card" style="color:#fff">Hi-Vis Vest</h3>
-        <p style="color:rgba(255,255,255,0.92); font-size:14px;">Soft mesh, real reflectors, Velcro front. Sizes 2 → 8.</p>
-        <span class="kids-price">$22</span>
-      </div>
-      <div class="dress-card sticker" style="background:var(--color-sage); color:#fff; border-color:var(--color-navy);">
-        <img src="assets/illust-truck.png" alt="" class="kids-img" />
-        <h3 class="h-card" style="color:#fff">Full Crew Kit</h3>
-        <p style="color:rgba(255,255,255,0.92); font-size:14px;">Hat + vest + belt + clipboard. The whole worksite get-up.</p>
-        <span class="kids-price">$58</span>
-      </div>
-    </div>
-  </div>
-
-  <style>
-    .dressup-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
-    .dress-card { padding: 22px; display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
-    .dress-card .kids-img { width:84px; height:84px; object-fit:contain; background:rgba(255,255,255,0.9); padding:10px; border-radius:18px; border:2px solid var(--color-navy); margin-bottom: 6px; }
-    .dress-card .kids-price { margin-top:auto; font-family:var(--font-display); font-size:30px; color:#fff; }
-    @media (max-width: 880px) { .dressup-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 480px) { .dressup-grid { grid-template-columns: 1fr; } }
-  </style>
-</section>
-
-<!-- BUILD KITS -->
-<section id="kits" class="section container">
-  <div class="menu-section-head">
-    <span class="section-num" style="color:var(--color-yellow)">03</span>
-    <div>
-      <span class="eyebrow">Build-It Kits</span>
-      <h2 class="h-section" style="margin-top:6px">Boxed weekend projects.</h2>
-    </div>
-    <img src="assets/illust-loader.png" alt="" />
-  </div>
-
-  <div class="kit-grid">
-    <article class="kit-card sticker">
-      <div class="kit-art" style="background: linear-gradient(150deg,#F4C542,#C29622);"><img src="assets/illust-helmet.png" alt="" /></div>
-      <span class="pill yellow">Beginner</span>
-      <h3 class="h-card" style="margin-top:10px">Birdhouse Build</h3>
-      <p>Pre-cut pine, soft hammer, nails, paint and a how-to card. 45-minute project.</p>
-      <div class="toy-foot" style="margin-top:14px">
-        <span class="toy-price">$32</span>
-        <span class="age-pill">Age 5+</span>
-      </div>
-    </article>
-    <article class="kit-card sticker">
-      <div class="kit-art" style="background: linear-gradient(150deg,#1F8A8A,#155656);"><img src="assets/illust-toolbox.png" alt="" /></div>
-      <span class="pill teal">Intermediate</span>
-      <h3 class="h-card" style="margin-top:10px">Pencil Caddy</h3>
-      <p>Sturdy desktop organiser. Five compartments, real hinges, sandpaper included.</p>
-      <div class="toy-foot" style="margin-top:14px">
-        <span class="toy-price">$38</span>
-        <span class="age-pill">Age 6+</span>
-      </div>
-    </article>
-    <article class="kit-card sticker">
-      <div class="kit-art" style="background: linear-gradient(150deg,#E67E22,#A95C19);"><img src="assets/illust-truck.png" alt="" /></div>
-      <span class="pill orange">Advanced</span>
-      <h3 class="h-card" style="margin-top:10px">Mini Soapbox Cart</h3>
-      <p>A working push-cart kit with wooden axles, rubber wheels, painted side panels.</p>
-      <div class="toy-foot" style="margin-top:14px">
-        <span class="toy-price">$78</span>
-        <span class="age-pill">Age 7+</span>
-      </div>
-    </article>
-  </div>
-</section>
-
-<!-- BOOKS -->
-<section id="books" class="section section-cream-soft">
-  <div class="container">
-    <div class="menu-section-head">
-      <span class="section-num" style="color:var(--color-coral)">04</span>
-      <div>
-        <span class="eyebrow">Book Nook</span>
-        <h2 class="h-section" style="margin-top:6px">Stories from the worksite.</h2>
-      </div>
-      <img src="assets/illust-excavator.png" alt="" />
-    </div>
-
-    <div class="menu-grid">
-      <article class="menu-item">
-        <div class="menu-name">
-          <h3>How a Hard Hat Saved the Day</h3>
-          <span class="pill teal">Ages 3–6</span>
-        </div>
-        <p>A picture book about a clumsy apprentice, a wise foreman, and one very lucky hard hat.</p>
-        <span class="price-tag">$22</span>
-      </article>
-      <article class="menu-item">
-        <div class="menu-name">
-          <h3>The Big Yellow Truck</h3>
-          <span class="pill yellow">Ages 2–5</span>
-        </div>
-        <p>Classic bedtime read with chunky board-book pages and a fold-out worksite spread.</p>
-        <span class="price-tag">$18</span>
-      </article>
-      <article class="menu-item">
-        <div class="menu-name">
-          <h3>My First Tools (and How They Work)</h3>
-          <span class="pill orange">Ages 5–8</span>
-        </div>
-        <p>Illustrated guide to a tape measure, level, hammer and saw — by a real chippie.</p>
-        <span class="price-tag">$26</span>
-      </article>
-      <article class="menu-item">
-        <div class="menu-name">
-          <h3>One Day on Site (with Stickers!)</h3>
-          <span class="pill sage">Ages 4–7</span>
-        </div>
-        <p>A day-in-the-life storybook with 120 reusable worksite stickers in the back.</p>
-        <span class="price-tag">$24</span>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- CTA STRIP -->
-<section class="section">
-  <div class="container">
-    <div class="movement sticker" style="background: var(--color-orange); color:#fff; border-color:var(--color-navy); border-width:4px; box-shadow: 6px 6px 0 var(--color-navy); padding: 44px 48px;">
-      <div class="movement-grid">
-        <div>
-          <span class="eyebrow" style="color:var(--color-yellow)">Order ahead</span>
-          <h2 class="h-section" style="color:#fff; margin: 12px 0 14px; font-size: clamp(36px,4.6vw,56px);">
-            Wrap your coffee<br />
-            <span style="color:var(--color-yellow)">and a toy.</span>
-          </h2>
-          <p style="font-size:17px; color:rgba(255,255,255,0.92); max-width:520px; line-height:1.55;">
-            Phone, email or DM us with what you'd like. We'll wrap it,
-            stash it behind the counter and have it ready when you swing
-            by. Free local delivery on orders over $80.
-          </p>
-          <div class="row" style="margin-top: 22px">
-            <a class="btn navy lg" href="visit.html">Order ahead →</a>
-            <a class="btn outline lg" style="background:transparent; color:#fff; border-color:#fff;" href="visit.html#book">Email us</a>
+      <h2 class="h-section" style="margin-bottom: 24px;">Hours</h2>
+      <div class="sticker" style="padding: 28px;">
+        <div style="display: grid; gap: 12px;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; border-bottom: 2px solid var(--tint-navy-15); padding-bottom: 12px;">
+            <strong>Monday – Friday</strong>
+            <span style="text-align: right;">6:00am – 2:00pm</span>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; border-bottom: 2px solid var(--tint-navy-15); padding-bottom: 12px;">
+            <strong>Saturday</strong>
+            <span style="text-align: right;">8:00am – 3:00pm</span>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+            <strong>Sunday</strong>
+            <span style="text-align: right;">8:00am – 3:00pm</span>
           </div>
         </div>
-        <div class="movement-art">
-          <img src="assets/illust-toolbox.png" alt="" />
+        <p class="muted" style="margin-top: 16px; font-size: 13px;">
+          Closed public holidays. Call ahead for group bookings.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="h-section" style="margin-bottom: 24px;">Contact</h2>
+      <div class="sticker" style="padding: 28px;">
+        <div style="display: grid; gap: 16px;">
+          <div>
+            <p style="font-weight: 600; margin-bottom: 4px;">Phone</p>
+            <a href="tel:0259590771" style="color: var(--color-teal); text-decoration: none; font-weight: 600;">(02) 5959 0771</a>
+          </div>
+          <div>
+            <p style="font-weight: 600; margin-bottom: 4px;">Email</p>
+            <a href="mailto:info@littletradiescafe.com.au" style="color: var(--color-teal); text-decoration: none; font-weight: 600;">info@littletradiescafe.com.au</a>
+          </div>
+          <div>
+            <p style="font-weight: 600; margin-bottom: 4px;">Address</p>
+            <p class="muted">U6/180 Forsyth Street<br />Wagga Wagga NSW 2650<br />Australia</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <style>
-    .movement { transition: none; }
-    .movement:hover { box-shadow: 6px 6px 0 var(--color-navy); transform: none; }
-  </style>
 </section>
 
-<!-- FOOTER -->
+<section id="book" class="section section-cream-soft">
+  <div class="container">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <div style="text-align: center; margin-bottom: 40px;">
+        <span class="eyebrow">Workshops & Events</span>
+        <h2 class="h-section" style="margin: 12px 0;">Book a Workshop</h2>
+        <p class="muted">Hands-on sessions for kids — woodworking, art, and construction skills.</p>
+      </div>
+
+      <form name="booking" method="POST" netlify class="sticker" style="padding: 40px; background: #fff; border-color: var(--color-navy);">
+        <div class="form-grid">
+          <div class="field">
+            <label>Parent/Guardian Name</label>
+            <input type="text" name="parent_name" required />
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="email" name="email" required />
+          </div>
+          <div class="field">
+            <label>Phone</label>
+            <input type="tel" name="phone" required />
+          </div>
+          <div class="field">
+            <label>Child's Name & Age</label>
+            <input type="text" name="child_info" placeholder="e.g. Emma, 6 years old" required />
+          </div>
+          <div class="field full">
+            <label>Which workshop?</label>
+            <select name="workshop" required>
+              <option value="">Select a workshop...</option>
+              <option value="hammer-hang">Hammer & Hang — Coat Hooks</option>
+              <option value="paint-design">Paint & Design — Custom Creations</option>
+              <option value="build-challenge">Build Challenge — Structures</option>
+              <option value="tool-mastery">Tool Mastery — Skills Class</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label>Preferred Date</label>
+            <input type="date" name="preferred_date" required />
+          </div>
+          <div class="field full">
+            <label>Notes (dietary, access needs, etc.)</label>
+            <textarea name="notes" placeholder="Let us know how we can help..."></textarea>
+          </div>
+          <div class="field full" style="margin-top: 6px;">
+            <button type="submit" class="btn primary lg" style="width: 100%;">Book Now →</button>
+          </div>
+        </div>
+      </form>
+
+      <p class="muted" style="text-align: center; margin-top: 24px; font-size: 13px;">
+        We'll confirm your booking within 24 hours. Cancellations must be made 48 hours in advance for a full refund.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section container">
+  <div style="max-width: 800px; margin: 0 auto;">
+    <div class="sticker" style="padding: 40px; text-align: center; border-color: var(--color-orange);">
+      <span class="eyebrow">Group Bookings</span>
+      <h3 class="h-card" style="margin: 12px 0;">Schools, Daycare & Birthday Parties</h3>
+      <p style="margin: 12px 0 24px; line-height: 1.6;">
+        Custom packages for groups. Tailored workshops, private play zone bookings, and catering available.
+      </p>
+      <a class="btn primary lg" href="mailto:info@littletradiescafe.com.au?subject=Group%20Booking%20Inquiry">
+        Get a Quote
+      </a>
+    </div>
+  </div>
+</section>
+
 <footer class="lt-footer">
   <div class="scallop" aria-hidden="true"></div>
   <div class="container footer-grid">
     <div class="brand-col">
-      <img src="assets/logo-final.png" alt="Little Tradies Cafe" />
+      <img src="assets/logo-final.png" alt="Little Tradies Cafe" loading="lazy" />
       <p class="ftag">Built for play. Brewed for parents. <span class="heart">♡</span></p>
     </div>
     <div>
       <h4>Visit Us</h4>
-      <p><span class="ico">▣</span> 123 Little Builders Lane<br />&nbsp;&nbsp;&nbsp;&nbsp;Playtown VIC 3000</p>
-      <p><span class="ico">◷</span> Open 7 Days<br />&nbsp;&nbsp;&nbsp;&nbsp;7:00am – 5:00pm</p>
+      <p><span class="ico">▣</span> U6/180 Forsyth Street<br />&nbsp;&nbsp;&nbsp;&nbsp;Wagga Wagga NSW 2650</p>
+      <p><span class="ico">◷</span> Mon–Fri 6am–2pm<br />&nbsp;&nbsp;&nbsp;&nbsp;Weekends 8am–3pm</p>
     </div>
     <div>
       <h4>Get in Touch</h4>
-      <p><span class="ico">☎</span> (03) 1234 5678</p>
-      <p><span class="ico">✉</span> hello@littletradiescafe.com.au</p>
+      <p><span class="ico">☎</span> (02) 5959 0771</p>
+      <p><span class="ico">✉</span> info@littletradiescafe.com.au</p>
       <p><span class="ico">⌖</span> littletradiescafe.com.au</p>
     </div>
     <div>
       <h4>Follow Us</h4>
       <div class="socials">
-        <a href="#" class="soc f" aria-label="Facebook">f</a>
-        <a href="#" class="soc i" aria-label="Instagram">◉</a>
-        <a href="#" class="soc t" aria-label="TikTok">♪</a>
+        <a href="https://facebook.com/littletradiescafe" class="soc f" aria-label="Facebook">f</a>
+        <a href="https://instagram.com/littletradiescafe" class="soc i" aria-label="Instagram">◉</a>
+        <a href="https://tiktok.com/@littletradiescafe" class="soc t" aria-label="TikTok">♪</a>
       </div>
       <p class="thanks">Thanks for supporting<br />local &amp; family! <span class="heart">♡</span></p>
     </div>
@@ -393,57 +206,11 @@
   <div class="copybar">
     <div class="container copybar-row">
       <span>© 2026 Little Tradies Cafe · Built for play. Brewed for parents.</span>
-      <span><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms &amp; Conditions</a></span>
+      <span><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms &amp; Conditions</a></span>
     </div>
   </div>
 </footer>
 
-<!-- toys-specific styles -->
-<style>
-  .toy-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-  .toy-card { padding: 0; overflow: hidden; }
-  .toy-photo {
-    position: relative;
-    aspect-ratio: 4/3;
-    display: flex; align-items: center; justify-content: center;
-    border-bottom: 3px solid var(--color-navy);
-  }
-  .toy-photo img { width: 65%; max-width: 220px; filter: drop-shadow(0 8px 14px rgba(47,78,104,0.22)); transform: rotate(-3deg); }
-  .toy-tag { position: absolute; top: 14px; left: 14px; }
-  .toy-body { padding: 18px 22px 20px; }
-  .toy-body p { font-size: 14px; line-height: 1.5; margin: 6px 0 12px; }
-  .toy-foot { display: flex; justify-content: space-between; align-items: center; }
-  .toy-price {
-    font-family: var(--font-display);
-    color: var(--color-orange);
-    font-size: 32px;
-    line-height: 1;
-  }
-  .age-pill {
-    background: var(--color-yellow);
-    color: var(--color-navy);
-    border: 2px solid var(--color-navy);
-    padding: 4px 12px;
-    border-radius: 9999px;
-    font-family: var(--font-label);
-    font-size: 12px;
-    letter-spacing: 0.08em;
-  }
-
-  .kit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-  .kit-card { padding: 22px; display: flex; flex-direction: column; gap: 8px; }
-  .kit-art {
-    width: 100%; aspect-ratio: 4/3;
-    border-radius: 18px;
-    display: flex; align-items: center; justify-content: center;
-    margin-bottom: 8px;
-    border: 2px solid var(--color-navy);
-  }
-  .kit-art img { width: 60%; max-width: 180px; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.3)); transform: rotate(-4deg); }
-
-  @media (max-width: 880px) { .toy-grid, .kit-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 560px) { .toy-grid, .kit-grid { grid-template-columns: 1fr; } }
-</style>
-
+<script src="js/main.js" defer></script>
 </body>
 </html>
